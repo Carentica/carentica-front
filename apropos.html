@@ -66,7 +66,7 @@
                             src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
                             alt="Workflow">
                     </div>
-                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-1">
                         <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
                         <a href="index.html"
                             class="border-transparent text-gunmetal hover:border-carmine  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
@@ -82,17 +82,25 @@
                             Contact</a>
                     </div>
                 </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div class="absolute inset-y-0 right-0 flex gap-2 items-center pr-1 sm:static sm:inset-auto  sm:pr-0">
 
 
                     <!-- Profile dropdown -->
+                    <div class="hidden   sm:flex md:items-center md:justify-end md:inset-y-0 md:left-0">
+                        <span class="inline-flex rounded-md shadow">
+                            <a href="inscription.html"
+                                class="inline-flex items-center px-2 py-2 border border-transparent text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-50">
+                                Inscription </a>
+                        </span>
+                    </div>
                     <div class="hidden  sm:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                         <span class="inline-flex rounded-md shadow">
-                            <a href="#"
-                                class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-50">
+                            <a href="login.html"
+                                class="inline-flex items-center px-2 py-2 border border-transparent text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-50">
                                 Log in </a>
                         </span>
                     </div>
+
 
                     <!--
                           Dropdown menu, show/hide based on menu state.
@@ -126,16 +134,22 @@
                 <a href="index.html"
                     class="border-transparent text-gunmetal hover:bg-gunmetal hover:text-white hover:border-carmine block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Accueil</a>
                 <a href="apropos.html"
-                    class="border-transparent text-gunmetal hover:bg-gunmetal hover:text-white hover:border-carmine block pl-3 pr-4 py-2 border-l-4 text-base font-medium"><span class="first-letter:uppercase">à propos</span></a>
+                    class="border-transparent text-gunmetal hover:bg-gunmetal hover:text-white hover:border-carmine block pl-3 pr-4 py-2 border-l-4 text-base font-medium"><span
+                        class="first-letter:uppercase">à propos</span></a>
                 <a href="#"
                     class="border-transparent text-gunmetal hover:bg-gunmetal hover:text-white hover:border-carmine block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Nos
                     formations</a>
                 <a href="contact.html"
                     class="border-transparent text-gunmetal hover:bg-gunmetal hover:text-white hover:border-carmine block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contact</a>
-                <div class=" flex items-center justify-center ">
+                <div class=" flex items-center gap-1 justify-center ">
                     <span class="inline-flex rounded-md shadow">
-                        <a href="#"
-                            class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-50">
+                        <a href="inscription.html"
+                            class="inline-flex items-center px-2 py-2 border border-transparent text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-50">
+                            Inscription </a>
+                    </span>
+                    <span class="inline-flex rounded-md shadow">
+                        <a href="login.html"
+                            class="inline-flex items-center px-2 py-2 border border-transparent text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-50">
                             Log in </a>
                     </span>
                 </div>
@@ -145,73 +159,85 @@
 
     <div class="relative bg-white py-16 sm:py-24">
         <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
-          <div class="relative sm:py-16 lg:py-0">
-            <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
-              <div class="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72"></div>
-              <svg class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392" fill="none" viewBox="0 0 404 392">
-                <defs>
-                  <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                  </pattern>
-                </defs>
-                <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
-              </svg>
+            <div class="relative sm:py-16 lg:py-0">
+                <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+                    <div class="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72"></div>
+                    <svg class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" width="404"
+                        height="392" fill="none" viewBox="0 0 404 392">
+                        <defs>
+                            <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20"
+                                patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
+                    </svg>
+                </div>
+                <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+                    <!-- Testimonial card-->
+                    <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
+
+                        <div class="absolute inset-0 bg-carmine mix-blend-multiply"></div>
+                        <div class="absolute inset-0 bg-carmine opacity-10"></div>
+                        <div class="relative px-8">
+                            <blockquote class="mt-8">
+
+
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-              <!-- Testimonial card-->
-              <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
-                
-                <div class="absolute inset-0 bg-carmine mix-blend-multiply"></div>
-                <div class="absolute inset-0 bg-carmine opacity-10"></div>
-                <div class="relative px-8">
-                  <blockquote class="mt-8">
-                    
-      
-                  </blockquote>
+
+            <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+                <!-- Content area -->
+                <div class="pt-12 sm:pt-16 lg:pt-20">
+                    <h2 class="text-3xl text-gunmetal font-extrabold tracking-tight sm:text-4xl">On a mission to empower
+                        teams</h2>
+                    <div class="mt-6 text-gray-500 space-y-6">
+                        <p class="text-lg">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
+                            consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus
+                            faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.</p>
+                        <p class="text-base leading-7">Sollicitudin tristique eros erat odio sed vitae, consequat turpis
+                            elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec
+                            laoreet quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis
+                            elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec
+                            laoreet quam urna.</p>
+                        <p class="text-base leading-7">Rhoncus nisl, libero egestas diam fermentum dui. At quis
+                            tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis
+                            vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
+                            fermentum lacus in. Viverra.</p>
+                    </div>
                 </div>
-              </div>
+
+                <!-- Stats section -->
+                <div class="mt-10">
+                    <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-500">Founded</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">2021</dd>
+                        </div>
+
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-500">Employees</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">5</dd>
+                        </div>
+
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-500">Beta Users</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">521</dd>
+                        </div>
+
+                        <div class="border-t-2 border-gray-100 pt-6">
+                            <dt class="text-base font-medium text-gray-500">Raised</dt>
+                            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">$25M</dd>
+                        </div>
+                    </dl>
+
+                </div>
             </div>
-          </div>
-      
-          <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
-            <!-- Content area -->
-            <div class="pt-12 sm:pt-16 lg:pt-20">
-              <h2 class="text-3xl text-gunmetal font-extrabold tracking-tight sm:text-4xl">On a mission to empower teams</h2>
-              <div class="mt-6 text-gray-500 space-y-6">
-                <p class="text-lg">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.</p>
-                <p class="text-base leading-7">Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-                <p class="text-base leading-7">Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
-              </div>
-            </div>
-      
-            <!-- Stats section -->
-            <div class="mt-10">
-              <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
-                <div class="border-t-2 border-gray-100 pt-6">
-                  <dt class="text-base font-medium text-gray-500">Founded</dt>
-                  <dd class="text-3xl font-extrabold tracking-tight text-gray-900">2021</dd>
-                </div>
-      
-                <div class="border-t-2 border-gray-100 pt-6">
-                  <dt class="text-base font-medium text-gray-500">Employees</dt>
-                  <dd class="text-3xl font-extrabold tracking-tight text-gray-900">5</dd>
-                </div>
-      
-                <div class="border-t-2 border-gray-100 pt-6">
-                  <dt class="text-base font-medium text-gray-500">Beta Users</dt>
-                  <dd class="text-3xl font-extrabold tracking-tight text-gray-900">521</dd>
-                </div>
-      
-                <div class="border-t-2 border-gray-100 pt-6">
-                  <dt class="text-base font-medium text-gray-500">Raised</dt>
-                  <dd class="text-3xl font-extrabold tracking-tight text-gray-900">$25M</dd>
-                </div>
-              </dl>
-              
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <footer class="bg-gunmetal" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -293,18 +319,21 @@
                                 </li>
 
                                 <li>
-                                    <a href="#" class="text-base text-gray-200 hover:text-white"> Conditions générales d'utilisation </a>
+                                    <a href="#" class="text-base text-gray-200 hover:text-white"> Conditions générales
+                                        d'utilisation </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" class="text-base text-gray-200 hover:text-white"> Politique de protection des données personnelles </a>
+                                    <a href="#" class="text-base text-gray-200 hover:text-white"> Politique de
+                                        protection des données personnelles </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="mt-8 xl:mt-0">
-                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Abonnez-vous à notre newsletter
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Abonnez-vous à notre
+                        newsletter
                     </h3>
                     <p class="mt-4 text-base text-gray-200">Les dernières nouvelles envoyés dans votre boîte mail.</p>
                     <form class="mt-4 sm:flex sm:max-w-md">
@@ -321,7 +350,7 @@
             </div>
             <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
                 <div class="flex space-x-6 md:order-2">
-                    
+
 
                     <a href="#" class="text-gray-300 hover:text-gray-200">
                         <span class="sr-only">Instagram</span>
@@ -349,7 +378,7 @@
                         </svg>
                     </a>
 
-                    
+
                 </div>
                 <p class="mt-8 text-base text-gray-300 md:mt-0 md:order-1">&copy; 2020 Workflow, Inc. All rights
                     reserved.</p>
@@ -358,7 +387,7 @@
     </footer>
 
 
-     <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
