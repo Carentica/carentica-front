@@ -1,4 +1,4 @@
-name: carantica-front
+name: Deploy
 
 on:
   push:
