@@ -5,137 +5,173 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'gunmetal': '#2c3539',
-            'carmine': '#990012',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 
-<body class="h-full overflow-hidden">
-  <div class="h-full flex flex-col">
-    <!-- Top nav-->
-    <header class="flex-shrink-0 relative h-16 bg-gunmeatl flex items-center">
-      <!-- Logo area -->
-      <div class="absolute inset-y-0 left-0 md:static md:flex-shrink-0">
-        <a href="index.html" class="flex items-center justify-center h-16 w-16 md:w-20">
-          <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 597.59 255">
-            <defs>
-              <style>
-                .cls-1,
-                .cls-3 {
-                  fill: #2b3438;
-                }
+<body class="min-h-full">
 
-                .cls-2 {
-                  fill: #990012;
-                }
+  <div class="min-h-full">
+    <div class="bg-gray-800 pb-32">
+      <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <div class="border-b border-gray-700">
+            <div class="flex items-center justify-between h-16 px-4 sm:px-0">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                    alt="Workflow">
+                </div>
+                <div class="hidden md:block">
+                  <div class="ml-10 flex items-baseline space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      aria-current="page">Dashboard</a>
 
-                .cls-3 {
-                  font-size: 112px;
-                  font-family: Barlow-SemiBoldItalic, Barlow;
-                  font-weight: 600;
-                  font-style: italic;
-                }
+                    <a href="#"
+                      class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
 
-                .cls-4 {
-                  letter-spacing: -0.01em;
-                }
-              </style>
-            </defs>
-            <path class="cls-1"
-              d="M206.06,73.36a130,130,0,0,0-59.74,19.13,113.36,113.36,0,0,0-21.95,17.61,112.8,112.8,0,0,0-12.54,14.21,127.58,127.58,0,0,0-.27,152.44,132.29,132.29,0,0,0,25.81,26A128.29,128.29,0,0,0,196.13,327c6.41.93,9,1.09,18,1.09a115.49,115.49,0,0,0,13.05-.48c19.61-2.33,36.71-8.07,52.6-17.6a129.49,129.49,0,0,0,40.63-39,142,142,0,0,0,10.93-20.25c.29-.74.74-1.78,1-2.33l.42-1H285.18L284,249.14a90.69,90.69,0,0,1-8.79,10.16,81.29,81.29,0,0,1-49.55,23.17,106,106,0,0,1-19.61-.56,84.61,84.61,0,0,1-21.63-6.51,79.23,79.23,0,0,1-8.65-4.61L173,268.94A77,77,0,0,1,162,260.07a83.22,83.22,0,0,1-23.37-40.23,78.47,78.47,0,0,1-2.54-18.53,85.11,85.11,0,0,1,11.25-45.13,86.38,86.38,0,0,1,27.47-28.91,102,102,0,0,1,9.24-5c1-.42,2-.9,2.3-1,.42-.24,3.15-1.3,6-2.33a85.19,85.19,0,0,1,15.85-3.6A80.76,80.76,0,0,1,266.7,130.8a83.86,83.86,0,0,1,21.47,23.58l.58,1H311c17.7,0,22.23-.08,22.12-.35s-.58-1.4-1.11-2.7a139.5,139.5,0,0,0-9.87-19.24,131.27,131.27,0,0,0-29.57-32.88,146.32,146.32,0,0,0-21.52-13.63A129,129,0,0,0,206.06,73.36Z"
-              transform="translate(-86.42 -73.1)" />
-            <path class="cls-2"
-              d="M215.06,157.69a43.27,43.27,0,0,0-37.32,50.77A42.52,42.52,0,0,0,190,232.15a49.93,49.93,0,0,0,5.77,5,42,42,0,0,0,39.38,4.53,43.55,43.55,0,0,0,23.48-22.82,45.74,45.74,0,0,0,1.64-31.23,42.4,42.4,0,0,0-6.8-13.13,41.91,41.91,0,0,0-34-16.94C217.49,157.56,215.51,157.64,215.06,157.69Z"
-              transform="translate(-86.42 -73.1)" /><text class="cls-3" transform="translate(193.05 155.7)">a<tspan
-                class="cls-4" x="60.48" y="0">r</tspan>
-              <tspan x="100.24" y="0">entica</tspan>
-            </text>
-          </svg>
-        </a>
-      </div>
+                    <a href="#"
+                      class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
 
-      <!-- Picker area -->
-      <div class="mx-auto md:hidden">
-        <div class="relative">
-          <label for="inbox-select" class="sr-only">Choose inbox</label>
-          <select id="inbox-select"
-            class="rounded-md border-0 bg-none pl-3 pr-8 text-base font-medium text-gray-900 focus:ring-2 focus:ring-indigo-600">
-            <option selected>Open</option>
+                    <a href="#"
+                      class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
 
-            <option>Archive</option>
+                    <a href="#"
+                      class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reports</a>
+                  </div>
+                </div>
+              </div>
 
-            <option>Customers</option>
-
-            <option>Flagged</option>
-
-            <option>Spam</option>
-
-            <option>Drafts</option>
-          </select>
-          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center justify-center pr-2">
-            <!-- Heroicon name: solid/chevron-down -->
-            <svg class="h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-              fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd" />
-            </svg>
-          </div>
-        </div>
-      </div>
+              <div class="px-12 lg:px-0">
+                <!-- Search -->
+                <div class="max-w-xs mx-auto w-full lg:max-w-md">
+                  <label for="search" class="sr-only">Search</label>
+                  <div class="relative text-white focus-within:text-gray-600">
+                    <div class="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
+                      <!-- Heroicon name: solid/search -->
+                      <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <input id="search" class="block w-full text-white bg-white bg-opacity-20 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 focus:text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm" placeholder="Search" type="search" name="search">
+                  </div>
+                </div>
+              </div>
 
 
+              <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                  <button type="button"
+                    class="bg-gray-800 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <span class="sr-only">View notifications</span>
+                    <!-- Heroicon name: outline/bell -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                  </button>
 
-      <!-- Menu button area -->
-      <div class="absolute inset-y-0 right-0 pr-4 flex items-center sm:pr-6 md:hidden">
-        <!-- Mobile menu button -->
-        <button type="button"
-          class="-mr-2 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
-          <span class="sr-only">Open main menu</span>
-          <!-- Heroicon name: outline/menu -->
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-            stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
+                  <!-- Profile dropdown -->
+                  <div class="ml-3 relative">
+                    <div>
+                      <button type="button"
+                        class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                        id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="h-8 w-8 rounded-full"
+                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          alt="">
+                      </button>
+                    </div>
 
-      <!-- Desktop nav area -->
-      <div class="hidden md:min-w-0 md:flex-1 md:flex md:items-center md:justify-between">
-        <div class="min-w-0 flex-1">
-          <div class="max-w-2xl relative text-gray-400 focus-within:text-gray-500">
-            <label for="desktop-search" class="sr-only">Search</label>
-            <input id="desktop-search" type="search" placeholder="Search"
-              class="block w-full border-transparent pl-12 placeholder-gray-500 focus:border-transparent sm:text-sm focus:ring-0">
-            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-4">
-              <!-- Heroicon name: solid/search -->
-              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd" />
-              </svg>
+                    <!--
+                      Dropdown menu, show/hide based on menu state.
+  
+                      Entering: "transition ease-out duration-100"
+                        From: "transform opacity-0 scale-95"
+                        To: "transform opacity-100 scale-100"
+                      Leaving: "transition ease-in duration-75"
+                        From: "transform opacity-100 scale-100"
+                        To: "transform opacity-0 scale-95"
+                    -->
+                    <div
+                      class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                      role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                      <!-- Active: "bg-gray-100", Not Active: "" -->
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                        id="user-menu-item-0">Your Profile</a>
+
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                        id="user-menu-item-1">Settings</a>
+
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                        id="user-menu-item-2">Sign out</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="-mr-2 flex md:hidden">
+                <!-- Mobile menu button -->
+                <button type="button"
+                  class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <!--
+                    Heroicon name: outline/menu
+  
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                  <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                  <!--
+                    Heroicon name: outline/x
+  
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="ml-10 pr-4 flex-shrink-0 flex items-center space-x-10">
-          <nav aria-label="Global" class="flex space-x-10">
-            <a href="#" class="text-sm font-medium text-gray-900">Inboxes</a>
-            <a href="#" class="text-sm font-medium text-gray-900">Reporting</a>
-            <a href="#" class="text-sm font-medium text-gray-900">Settings</a>
-          </nav>
-          <div class="flex items-center space-x-8">
-            <span class="inline-flex">
-              <a href="#" class="-mx-1 bg-white p-1 rounded-full text-gray-400 hover:text-gray-500">
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="border-b border-gray-700 md:hidden" id="mobile-menu">
+          <div class="px-2 py-3 space-y-1 sm:px-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page">Dashboard</a>
+
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reports</a>
+          </div>
+          <div class="pt-4 pb-3 border-t border-gray-700">
+            <div class="flex items-center px-5">
+              <div class="flex-shrink-0">
+                <img class="h-10 w-10 rounded-full"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="">
+              </div>
+              <div class="ml-3">
+                <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+                <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+              </div>
+              <button type="button"
+                class="ml-auto bg-gray-800 flex-shrink-0 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                 <span class="sr-only">View notifications</span>
                 <!-- Heroicon name: outline/bell -->
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -143,435 +179,93 @@
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                 </svg>
-              </a>
-            </span>
-
-            <div class="relative inline-block text-left">
-              <button type="button"
-                class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
-                id="menu-0-button" aria-expanded="false" aria-haspopup="true">
-                <span class="sr-only">Open user menu</span>
-                <img class="h-8 w-8 rounded-full"
-                  src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  alt="">
               </button>
+            </div>
+            <div class="mt-3 px-2 space-y-1">
+              <a href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Your
+                Profile</a>
 
-              <!--
-                Dropdown menu, show/hide based on menu state.
-  
-                Entering: "transition ease-out duration-100"
-                  From: "transform opacity-0 scale-95"
-                  To: "transform opacity-100 scale-100"
-                Leaving: "transition ease-in duration-75"
-                  From: "transform opacity-100 scale-100"
-                  To: "transform opacity-0 scale-95"
-              -->
-              <div
-                class="origin-top-right absolute z-30 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                role="menu" aria-orientation="vertical" aria-labelledby="menu-0-button" tabindex="-1">
-                <div class="py-1" role="none">
-                  <!-- Active: "bg-gray-100", Not Active: "" -->
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                    id="menu-0-item-0"> Your Profile </a>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                    id="menu-0-item-1"> Sign Out </a>
-                </div>
-              </div>
+              <a href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Settings</a>
+
+              <a href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Sign
+                out</a>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-      <!-- Mobile menu, show/hide this `div` based on menu open/closed state -->
-
-      <div class="relative z-40 md:hidden" role="dialog" aria-modal="true">
-        <!--
-          Off-canvas menu backdrop, show/hide based on off-canvas menu state.
-  
-          Entering: "transition-opacity ease-linear duration-300"
-            From: "opacity-0"
-            To: "opacity-100"
-          Leaving: "transition-opacity ease-linear duration-300"
-            From: "opacity-100"
-            To: "opacity-0"
-        -->
-        <div class="hidden sm:block sm:fixed sm:inset-0 sm:bg-gray-600 sm:bg-opacity-75"></div>
-
-        <div class="fixed inset-0 z-40">
-          <!--
-            Mobile menu, toggle classes based on menu state.
-  
-            Entering: "transition ease-out duration-150 sm:ease-in-out sm:duration-300"
-              From: "transform opacity-0 scale-110 sm:translate-x-full sm:scale-100 sm:opacity-100"
-              To: "transform opacity-100 scale-100  sm:translate-x-0 sm:scale-100 sm:opacity-100"
-            Leaving: "transition ease-in duration-150 sm:ease-in-out sm:duration-300"
-              From: "transform opacity-100 scale-100 sm:translate-x-0 sm:scale-100 sm:opacity-100"
-              To: "transform opacity-0 scale-110  sm:translate-x-full sm:scale-100 sm:opacity-100"
-          -->
-          <div
-            class="fixed z-40 inset-0 h-full w-full bg-white sm:inset-y-0 sm:left-auto sm:right-0 sm:max-w-sm sm:w-full sm:shadow-lg"
-            aria-label="Global">
-            <div class="h-16 flex items-center justify-between px-4 sm:px-6">
-              <a href="#">
-                <img class="block h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500" alt="Workflow">
-              </a>
-              <button type="button"
-                class="-mr-2 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
-                <span class="sr-only">Close main menu</span>
-                <!-- Heroicon name: outline/x -->
-                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke-width="2" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-2 max-w-8xl mx-auto px-4 sm:px-6">
-              <div class="relative text-gray-400 focus-within:text-gray-500">
-                <label for="mobile-search" class="sr-only">Search all inboxes</label>
-                <input id="mobile-search" type="search" placeholder="Search all inboxes"
-                  class="block w-full border-gray-300 rounded-md pl-10 placeholder-gray-500 focus:border-indigo-600 focus:ring-indigo-600">
-                <div class="absolute inset-y-0 left-0 flex items-center justify-center pl-3">
-                  <!-- Heroicon name: solid/search -->
-                  <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                    aria-hidden="true">
-                    <path fill-rule="evenodd"
-                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="max-w-8xl mx-auto py-3 px-2 sm:px-4">
-              <a href="#"
-                class="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Inboxes</a>
-
-              <a href="#"
-                class="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">Technical
-                Support</a>
-
-              <a href="#"
-                class="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">Sales</a>
-
-              <a href="#"
-                class="block rounded-md py-2 pl-5 pr-3 text-base font-medium text-gray-500 hover:bg-gray-100">General</a>
-
-              <a href="#"
-                class="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Reporting</a>
-
-              <a href="#"
-                class="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-100">Settings</a>
-            </div>
-            <div class="border-t border-gray-200 pt-4 pb-3">
-              <div class="max-w-8xl mx-auto px-4 flex items-center sm:px-6">
-                <div class="flex-shrink-0">
-                  <img class="h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt="">
-                </div>
-                <div class="ml-3 min-w-0 flex-1">
-                  <div class="text-base font-medium text-gray-800 truncate">Whitney Francis</div>
-                  <div class="text-sm font-medium text-gray-500 truncate">whitney.francis@example.com</div>
-                </div>
-                <a href="#" class="ml-auto flex-shrink-0 bg-white p-2 text-gray-400 hover:text-gray-500">
-                  <span class="sr-only">View notifications</span>
-                  <!-- Heroicon name: outline/bell -->
-                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="2" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                  </svg>
-                </a>
-              </div>
-              <div class="mt-3 max-w-8xl mx-auto px-2 space-y-1 sm:px-4">
-                <a href="#" class="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-50">Your
-                  Profile</a>
-
-                <a href="#" class="block rounded-md py-2 px-3 text-base font-medium text-gray-900 hover:bg-gray-50">Sign
-                  out</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </header>
-
-
-
-    <!-- Bottom section -->
-    <div class="min-h-0 flex-1 flex overflow-hidden">
-      <!-- Narrow sidebar-->
-      <nav aria-label="Sidebar" class="hidden md:block md:flex-shrink-0 md:bg-gray-800 md:overflow-y-auto">
-        <div class="relative w-20 flex flex-col p-3 space-y-3">
-          <a href="#" class="bg-gray-900 text-white flex flex-col items-center justify-center h-14 w-14 rounded-lg">
-            <!-- Heroicon name: outline/inbox -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-            </svg>
-            <span class="">Open</span>
-          </a>
-
-          <a href="#"
-            class="text-gray-400 hover:bg-gray-700 flex flex-col items-center justify-center h-14 w-14 rounded-lg">
-            <!-- Heroicon name: outline/archive -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-            </svg>
-            <span class="">Archive</span>
-          </a>
-
-          <a href="#"
-            class="text-gray-400 hover:bg-gray-700 flex flex-col items-center justify-center h-14 w-14 rounded-lg">
-            <!-- Heroicon name: outline/user-circle -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span class="">Customers</span>
-          </a>
-
-          <a href="#"
-            class="text-gray-400 hover:bg-gray-700 flex flex-col items-center justify-center h-14 w-14 rounded-lg">
-            <!-- Heroicon name: outline/flag -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-            </svg>
-            <span class="">Flagged</span>
-          </a>
-
-          <a href="#"
-            class="text-gray-400 hover:bg-gray-700 flex flex-col items-center justify-center h-14 w-14 rounded-lg">
-            <!-- Heroicon name: outline/ban -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-            </svg>
-            <span class="">Spam</span>
-          </a>
-
-          <a href="#"
-            class="text-gray-400 hover:bg-gray-700 flex flex-col items-center justify-center h-14 w-14 rounded-lg">
-            <!-- Heroicon name: outline/pencil-alt -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-            <span class="">Drafts</span>
-          </a>
-        </div>
-
       </nav>
+      <header class="py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-white">Dashboard</h1>
+        </div>
+      </header>
+    </div>
 
-      <div class="relative bg-gunmeatl lg: min-w-full">
-
-        <ol role="list" class="w-full mx-auto px-4 flex space-x-4 sm:px-6 lg:px-8">
-          <li class="flex">
-            <div class="flex items-center">
-              <a href="#" class="text-gray-400 hover:text-gray-500">
-                <!-- Heroicon name: solid/home -->
-                <svg class="flex-shrink-0 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                </svg>
-                <span class="sr-only">Home</span>
-              </a>
+    <main class="-mt-32">
+      <!-- Replace with your content -->
+        <div class="flex-1 relative z-0 flex overflow-hidden border-4 border-dashed border-gray-200 rounded-lg h-96 bg-white rounded-lg shadow px-5 py-6 sm:px-6">
+          <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none">
+            <!-- Start main area-->
+            <div class="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
             </div>
-          </li>
-      
-          <li class="flex">
-            <div class="flex items-center">
-              <svg class="flex-shrink-0 w-6 h-full text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
-              </svg>
-              <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Projects</a>
-            </div>
-          </li>
-      
-          <li class="flex">
-            <div class="flex items-center">
-              <svg class="flex-shrink-0 w-6 h-full text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
-              </svg>
-              <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">Project Nero</a>
-            </div>
-          </li>
-        </ol>
-
-
-
-        <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 min-w-full">
-
-          <div class="absolute inset-0">
-            <div class="bg-white h-1/3 sm:h-2/3"></div>
-          </div>
-          <div class="relative max-w-7xl mx-auto">
-            <div class="text-center">
-              <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">From the blog</h2>
-              <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Ipsa libero labore natus atque, ducimus sed.</p>
-            </div>
-            <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                <div class="flex-shrink-0">
-                  <img class="h-48 w-full object-cover"
-                    src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                    alt="">
-                </div>
-                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                  <div class="flex-1">
-                    <p class="text-sm font-medium text-indigo-600">
-                      <a href="#" class="hover:underline"> Article </a>
-                    </p>
-                    <a href="#" class="block mt-2">
-                      <p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
-                      <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis
-                        dolorum.</p>
-                    </a>
-                  </div>
-
-
-                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                    <div
-                      class="bg-teal-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                      style="width: 30%"> 30%</div>
-                  </div>
-
-
-                  <div class="mt-6 flex items-center">
-                    <div class="flex-shrink-0">
-                      <a href="#">
-                        <span class="sr-only">Roel Aufderehar</span>
-                        <img class="h-10 w-10 rounded-full"
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                          alt="">
-                      </a>
-                    </div>
-                    <div class="ml-3">
-                      <p class="text-sm font-medium text-gray-900">
-                        <a href="#" class="hover:underline"> Roel Aufderehar </a>
-                      </p>
-                      <div class="flex space-x-1 text-sm text-gray-500">
-                        <time datetime="2020-03-16"> Mar 16, 2020 </time>
-                        <span aria-hidden="true"> &middot; </span>
-                        <span> 6 min read </span>
+            <!-- End main area -->
+            <section aria-labelledby="profile-overview-title">
+              <div class="rounded-lg bg-white overflow-hidden shadow">
+                <h2 class="sr-only" id="profile-overview-title">Profile Overview</h2>
+                <div class="bg-white p-6">
+                  <div class="sm:flex sm:items-center sm:justify-between">
+                    <div class="sm:flex sm:space-x-5">
+                      <div class="flex-shrink-0">
+                        <img class="mx-auto h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                      </div>
+                      <div class="mt-4 text-center sm:mt-0 sm:pt-1 sm:text-left">
+                        <p class="text-sm font-medium text-gray-600">Welcome back,</p>
+                        <p class="text-xl font-bold text-gray-900 sm:text-2xl">Chelsea Hagon</p>
+                        <p class="text-sm font-medium text-gray-600">Human Resources Manager</p>
                       </div>
                     </div>
+                    <div class="mt-5 flex justify-center sm:mt-0">
+                      <a href="#" class="flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"> View profile </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-gray-200 bg-gray-50 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
+                  <div class="px-6 py-5 text-sm font-medium text-center">
+                    <span class="text-gray-900">12</span>
+                    <span class="text-gray-600">Vacation days left</span>
+                  </div>
+  
+                  <div class="px-6 py-5 text-sm font-medium text-center">
+                    <span class="text-gray-900">4</span>
+                    <span class="text-gray-600">Sick days left</span>
+                  </div>
+  
+                  <div class="px-6 py-5 text-sm font-medium text-center">
+                    <span class="text-gray-900">2</span>
+                    <span class="text-gray-600">Personal days left</span>
                   </div>
                 </div>
               </div>
-
-              <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                <div class="flex-shrink-0">
-                  <img class="h-48 w-full object-cover"
-                    src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                    alt="">
-                </div>
-                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                  <div class="flex-1">
-                    <p class="text-sm font-medium text-indigo-600">
-                      <a href="#" class="hover:underline"> Video </a>
-                    </p>
-                    <a href="#" class="block mt-2">
-                      <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive
-                        sales
-                      </p>
-                      <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Velit facilis asperiores porro quaerat doloribus, eveniet dolore.</p>
-                    </a><br />
-                  </div>
-
-                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                    <div
-                      class="bg-teal-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                      style="width: 30%"> 30%</div>
-                  </div>
-
-
-                  <div class="mt-6 flex items-center">
-                    <div class="flex-shrink-0">
-                      <a href="#">
-                        <span class="sr-only">Brenna Goyette</span>
-                        <img class="h-10 w-10 rounded-full"
-                          src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                          alt="">
-                      </a>
-                    </div>
-                    <div class="ml-3">
-                      <p class="text-sm font-medium text-gray-900">
-                        <a href="#" class="hover:underline"> Brenna Goyette </a>
-                      </p>
-                      <div class="flex space-x-1 text-sm text-gray-500">
-                        <time datetime="2020-03-10"> Mar 10, 2020 </time>
-                        <span aria-hidden="true"> &middot; </span>
-                        <span> 4 min read </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                <div class="flex-shrink-0">
-                  <img class="h-48 w-full object-cover"
-                    src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                    alt="">
-                </div>
-                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                  <div class="flex-1">
-                    <p class="text-sm font-medium text-indigo-600">
-                      <a href="#" class="hover:underline"> Case Study </a>
-                    </p>
-                    <a href="#" class="block mt-2">
-                      <p class="text-xl font-semibold text-gray-900">Improve your customer experience</p>
-                      <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque
-                        corporis perferendis hic.</p>
-                    </a>
-                  </div>
-                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                    <div
-                      class="bg-teal-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                      style="width: 30%"> 30%</div>
-                  </div>
-
-                  <div class="mt-6 flex items-center">
-                    <div class="flex-shrink-0">
-                      <a href="#">
-                        <span class="sr-only">Daniela Metz</span>
-                        <img class="h-10 w-10 rounded-full"
-                          src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                          alt="">
-                      </a>
-                    </div>
-                    <div class="ml-3">
-                      <p class="text-sm font-medium text-gray-900">
-                        <a href="#" class="hover:underline"> Daniela Metz </a>
-                      </p>
-                      <div class="flex space-x-1 text-sm text-gray-500">
-                        <time datetime="2020-02-12"> Feb 12, 2020 </time>
-                        <span aria-hidden="true"> &middot; </span>
-                        <span> 11 min read </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </section>
+            test
+          </main>
+          <aside
+            class="hidden relative xl:flex xl:flex-col flex-shrink-0 w-96 border-l border-gray-200 overflow-y-auto">
+            <!-- Start secondary column (hidden on smaller screens) -->
+            <div class="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
             </div>
-          </div>
+            <!-- End secondary column -->
+            test
+          </aside>
         </div>
       </div>
+      <!-- /End replace -->
+  </div>
+  </main>
+  </div>
+
 
 </body>
 
