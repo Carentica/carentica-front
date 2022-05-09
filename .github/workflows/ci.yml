@@ -14,5 +14,5 @@ steps:
 
     - name: carantica-front
       run: |
-      yarn
-      yarn generate
+      apt
+      apt generate
