@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="h-full bg-white">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.png">
-    
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
         tailwind.config = {
@@ -21,318 +21,586 @@
             }
         }
     </script>
-    <title>Profil</title>
+    <title>profil</title>
 </head>
 
-<body>
-    <div>
-        <div class="relative bg-gunmetal pb-32 overflow-hidden">
-            <!-- Menu open: "bg-sky-900", Menu closed: "bg-transparent" -->
+<body class="h-full ">
 
-            <!-- Menu open: "bottom-0", Menu closed: "inset-y-0" -->
-            <div aria-hidden="true"
-                class="inset-y-0 absolute inset-x-0 left-1/2 transform -translate-x-1/2 w-full overflow-hidden lg:inset-y-0">
-                <div class="absolute inset-0 flex">
 
-                </div>
-                <div class="relative flex justify-center">
-                    <!-- <svg class="flex-shrink-0" width="1750" height="308" viewBox="0 0 1750 308"
-                        xmlns="http://www.w3.org/2000/svg"> -->
-                        <path d="M284.161 308H1465.84L875.001 182.413 284.161 308z" fill="#0369a1" />
-                        <path d="M1465.84 308L16.816 0H1750v308h-284.16z" fill="#065d8c" />
-                        <path d="M1733.19 0L284.161 308H0V0h1733.19z" fill="#0a527b" />
-                        <path d="M875.001 182.413L1733.19 0H16.816l858.185 182.413z" fill="#0a4f76" />
-                    </svg>
-                </div>
-            </div>
-            <header class="relative py-10">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h1 class="text-3xl font-bold text-white">Paramètre</h1>
-                </div>
-            </header>
-        </div>
-
-        <main class="relative -mt-32">
-            <div class="max-w-screen-xl mx-auto pb-6 px-4 sm:px-6 lg:pb-16 lg:px-8">
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="divide-y divide-gray-200 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
-                        <aside class="py-6 lg:col-span-3">
-                            <nav class="space-y-1">
-                                <!-- Current: "bg-teal-50 border-teal-500 text-teal-700 hover:bg-teal-50 hover:text-teal-700", Default: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
-                                <a href="#"
-                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium"
-                                    aria-current="page">
-                                    <!--
-                        Heroicon name: outline/user-circle
-      
-                        Current: "text-teal-500 group-hover:text-teal-500", Default: "text-gray-400 group-hover:text-gray-500"
-                      -->
-                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <span class="truncate"> Profile </span>
-                                </a>
-
-                                <a href="#"
-                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                    <!-- Heroicon name: outline/cog -->
-                                    <svg class="group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="truncate"> Compte </span>
-                                </a>
-
-                                <a href="#"
-                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                    <!-- Heroicon name: outline/key -->
-                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                                    </svg>
-                                    <span class="truncate"> Mot de passe </span>
-                                </a>
-
-                                <a href="#"
-                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                    <!-- Heroicon name: outline/bell -->
-                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                                    </svg>
-                                    <span class="truncate"> Notifications </span>
-                                </a>
-
-                                <a href="#"
-                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                    <!-- Heroicon name: outline/credit-card -->
-                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                                    </svg>
-                                    <span class="truncate"> Facturation </span>
-                                </a>
-
-                                <a href="#"
-                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                    <!-- Heroicon name: outline/view-grid-add -->
-                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
-                                    </svg>
-                                    <span class="truncate"> Integrations </span>
-                                </a>
-                            </nav>
-                        </aside>
-
-                        <form class="divide-y divide-gray-200 lg:col-span-9" action="#" method="POST">
-                            <!-- Profile section -->
-                            <div class="py-6 px-4 sm:p-6 lg:pb-8">
-                                <div>
-                                    <h2 class="text-lg leading-6 font-medium text-gunmetal">Profile</h2>
-                                    <p class="mt-1 text-sm text-gray-500">Ces informations seront affichées publiquement, alors faites attention à ce que vous partagez.</p>
+    <div class="min-h-full">
+        <div class="bg-gray-800 ">
+            <nav class="bg-gray-800">
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div class="border-b border-gray-700">
+                        <div class="flex items-center justify-between h-16 px-4 sm:px-0">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-8 w-8"
+                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                        alt="Workflow">
                                 </div>
+                                <div class="hidden md:block">
+                                    <div class="ml-10 flex items-baseline space-x-4">
+                                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                        <a href="#"
+                                            class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                            aria-current="page">Tableau de bord</a>
 
-                                <div class="mt-6 flex flex-col lg:flex-row">
-                                    <div class="flex-grow space-y-6">
-                                        <div>
-                                            <label for="username" class="block text-sm font-medium text-gray-700">
-                                                Nom d'utilisateur</label>
-                                            <div class="mt-1 rounded-md shadow-sm flex">
-                                                <span
-                                                    class="bg-gray-50 border border-r-0 border-gray-300 rounded-l-md px-3 inline-flex items-center text-gray-500 sm:text-sm">
-                                                    workcation.com/ </span>
-                                                <input type="text" name="username" id="username" autocomplete="username"
-                                                    class="focus:ring-carmine focus:border-carmine flex-grow block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
-                                                    value="deblewis">
-                                            </div>
-                                        </div>
+                                        <a href="index.html"
+                                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Acceuil</a>
 
-                                        <div>
-                                            <label for="about" class="block text-sm font-medium text-gray-700"> A propos
-                                            </label>
-                                            <div class="mt-1">
-                                                <textarea id="about" name="about" rows="3"
-                                                    class="shadow-sm focus:ring-carmine focus:border-carmine mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"></textarea>
-                                            </div>
-                                            <p class="mt-2 text-sm text-gray-500">
-                                                Brève description de votre profil.</p>
-                                        </div>
-                                    </div>
+                                        <a href="apropos.html"
+                                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">À
+                                            propos</a>
 
-                                    <div class="mt-6 flex-grow lg:mt-0 lg:ml-6 lg:flex-grow-0 lg:flex-shrink-0">
-                                        <p class="text-sm font-medium text-gray-700" aria-hidden="true">Photo</p>
-                                        <div class="mt-1 lg:hidden">
-                                            <div class="flex items-center">
-                                                <div class="flex-shrink-0 inline-block rounded-full overflow-hidden h-12 w-12"
-                                                    aria-hidden="true">
-                                                    <img class="rounded-full h-full w-full"
-                                                        src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=320&h=320&q=80"
-                                                        alt="">
-                                                </div>
-                                                <div class="ml-5 rounded-md shadow-sm">
-                                                    <div
-                                                        class="group relative border border-gray-300 rounded-md py-2 px-3 flex items-center justify-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-sky-500">
-                                                        <label for="mobile-user-photo"
-                                                            class="relative text-sm leading-4 font-medium text-gray-700 pointer-events-none">
-                                                            <span>Changer</span>
-                                                            <span class="sr-only"> user photo</span>
-                                                        </label>
-                                                        <input id="mobile-user-photo" name="user-photo" type="file"
-                                                            class="absolute w-full h-full opacity-0 cursor-pointer border-gray-300 rounded-md">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="nosformation.html"
+                                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Nos
+                                            formations</a>
 
-                                        <div class="hidden relative rounded-full overflow-hidden lg:block">
-                                            <img class="relative rounded-full w-40 h-40"
-                                                src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=320&h=320&q=80"
-                                                alt="">
-                                            <label for="desktop-user-photo"
-                                                class="absolute inset-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center text-sm font-medium text-white opacity-0 hover:opacity-100 focus-within:opacity-100">
-                                                <span>Changer</span>
-                                                <span class="sr-only"> photo de profile</span>
-                                                <input type="file" id="desktop-user-photo" name="user-photo"
-                                                    class="absolute inset-0 w-full h-full opacity-0 cursor-pointer border-gray-300 rounded-md">
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mt-6 grid grid-cols-12 gap-6">
-                                    <div class="col-span-12 sm:col-span-6">
-                                        <label for="first-name" class="block text-sm font-medium text-gray-700">Prénom</label>
-                                        <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-                                    </div>
-
-                                    <div class="col-span-12 sm:col-span-6">
-                                        <label for="last-name" class="block text-sm font-medium text-gray-700">Nom</label>
-                                        <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-                                    </div>
-
-                                    <div class="col-span-12">
-                                        <label for="ail" class="block text-sm font-medium text-gray-700">Adresse mail</label>
-                                        <input type="email" name="mail" id="mail"
-                                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+                                        <a href="contact.html"
+                                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Privacy section -->
-                            <div class="pt-6 divide-y divide-gray-200">
-                                <div class="px-4 sm:px-6">
-                                    <div>
-                                        <h2 class="text-lg leading-6 font-medium text-gunmetal">Privacy</h2>
-                                        <p class="mt-1 text-sm text-gray-500">Ornare eu a volutpat eget vulputate.
-                                            Fringilla commodo amet.</p>
+                            <div class="px-12 lg:px-0">
+                                <!-- Search -->
+                                <div class="max-w-xs mx-auto w-full lg:max-w-md">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <div class="relative text-white focus-within:text-gray-600">
+                                        <div
+                                            class="pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
+                                            <!-- Heroicon name: solid/search -->
+                                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <input id="search"
+                                            class="block w-full text-white bg-white bg-opacity-20 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 focus:text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm"
+                                            placeholder="Search" type="search" name="search" value="rechercher">
                                     </div>
-                                    <ul role="list" class="mt-2 divide-y divide-gray-200">
-                                        <li class="py-4 flex items-center justify-between">
-                                            <div class="flex flex-col">
-                                                <p class="text-sm font-medium text-gunmetal"
-                                                    id="privacy-option-1-label">Available to hire</p>
-                                                <p class="text-sm text-gray-500" id="privacy-option-1-description">Nulla
-                                                    amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</p>
-                                            </div>
-                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
-                                            <button type="button"
-                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200"
-                                                role="switch" aria-checked="true"
-                                                aria-labelledby="privacy-option-1-label"
-                                                aria-describedby="privacy-option-1-description">
-                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                                                <span aria-hidden="true"
-                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
-                                            </button>
-                                        </li>
-                                        <li class="py-4 flex items-center justify-between">
-                                            <div class="flex flex-col">
-                                                <p class="text-sm font-medium text-gunmetal"
-                                                    id="privacy-option-2-label">Mettre en privée</p>
-                                                <p class="text-sm text-gray-500" id="privacy-option-2-description">
-                                                    Pharetra morbi dui mi mattis tellus sollicitudin cursus pharetra.
-                                                </p>
-                                            </div>
-                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
-                                            <button type="button"
-                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 "
-                                                role="switch" aria-checked="false"
-                                                aria-labelledby="privacy-option-2-label"
-                                                aria-describedby="privacy-option-2-description">
-                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                                                <span aria-hidden="true"
-                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
-                                            </button>
-                                        </li>
-                                        <li class="py-4 flex items-center justify-between">
-                                            <div class="flex flex-col">
-                                                <p class="text-sm font-medium text-gunmetal"
-                                                    id="privacy-option-3-label">Autoriser les commentaires</p>
-                                                <p class="text-sm text-gray-500" id="privacy-option-3-description">
-                                                    Integer amet, nunc hendrerit adipiscing nam. Elementum ame</p>
-                                            </div>
-                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
-                                            <button type="button"
-                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200"
-                                                role="switch" aria-checked="true"
-                                                aria-labelledby="privacy-option-3-label"
-                                                aria-describedby="privacy-option-3-description">
-                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                                                <span aria-hidden="true"
-                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
-                                            </button>
-                                        </li>
-                                        <li class="py-4 flex items-center justify-between">
-                                            <div class="flex flex-col">
-                                                <p class="text-sm font-medium text-gunmetal"
-                                                    id="privacy-option-4-label">Autoriser les mensions</p>
-                                                <p class="text-sm text-gray-500" id="privacy-option-4-description">
-                                                    Adipiscing est venenatis enim molestie commodo eu gravid</p>
-                                            </div>
-                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
-                                            <button type="button"
-                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200"
-                                                role="switch" aria-checked="true"
-                                                aria-labelledby="privacy-option-4-label"
-                                                aria-describedby="privacy-option-4-description">
-                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                                                <span aria-hidden="true"
-                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
-                                            </button>
-                                        </li>
-                                    </ul>
                                 </div>
-                                <div class="mt-4 py-4 px-4 flex justify-end sm:px-6">
+                            </div>
+
+
+                            <div class="hidden md:block">
+                                <div class="ml-4 flex items-center md:ml-6">
                                     <button type="button"
-                                        class="bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-gunmetal hover:scale-95 ">Annuler</button>
-                                    <button type="submit"
-                                        class="ml-5 bg-carmine border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:scale-95">Sauvegarder</button>
+                                        class="bg-gray-800 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                        <span class="sr-only">View notifications</span>
+                                        <!-- Heroicon name: outline/bell -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                            aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                        </svg>
+                                    </button>
+
+                                    <!-- Profile dropdown -->
+                                    <div class="ml-3 relative">
+                                        <div>
+                                            <button type="button"
+                                                class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                                <span class="sr-only">Open user menu</span>
+                                                <img class="h-8 w-8 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                    alt="">
+                                            </button>
+                                        </div>
+
+                                        <!--
+                            Dropdown menu, show/hide based on menu state.
+        
+                            Entering: "transition ease-out duration-100"
+                              From: "transform opacity-0 scale-95"
+                              To: "transform opacity-100 scale-100"
+                            Leaving: "transition ease-in duration-75"
+                              From: "transform opacity-100 scale-100"
+                              To: "transform opacity-0 scale-95"
+                          -->
+                                        <div class="origin-top-right hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none "
+                                            role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                            tabindex="-1">
+                                            <!-- Active: "bg-gray-100", Not Active: "" -->
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                                tabindex="-1" id="user-menu-item-0">Profil</a>
+
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                                tabindex="-1" id="user-menu-item-1">Paramètre</a>
+
+                                            <a href="#" class="block px-4 py-2 text-sm text-carmine" role="menuitem"
+                                                tabindex="-1" id="user-menu-item-2">Déconnexion</a>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="-mr-2 flex md:hidden">
+                                <!-- Mobile menu button -->
+                                <button type="button"
+                                    class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    aria-controls="mobile-menu" aria-expanded="false">
+                                    <span class="sr-only">Open main menu</span>
+                                    <!--
+                          Heroicon name: outline/menu
+        
+                          Menu open: "hidden", Menu closed: "block"
+                        -->
+                                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                    <!--
+                          Heroicon name: outline/x
+        
+                          Menu open: "block", Menu closed: "hidden"
+                        -->
+                                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu, show/hide based on menu state. -->
+                <div class="border-b border-gray-700 md:hidden" id="mobile-menu">
+                    <div class="px-2 py-3 space-y-1 sm:px-3">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                            aria-current="page">Tableau de</a>
+
+                        <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Acceuil</a>
+
+                        <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">À
+                            propos</a>
+
+                        <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Nos
+                            formations</a>
+
+                        <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                    <div class="pt-4 pb-3 border-t border-gray-700">
+                        <div class="flex items-center px-5">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full"
+                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="">
+                            </div>
+                            <div class="ml-3">
+                                <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+                                <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+                            </div>
+                            <button type="button"
+                                class="ml-auto bg-gray-800 flex-shrink-0 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                <span class="sr-only">View notifications</span>
+                                <!-- Heroicon name: outline/bell -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-3 px-2 space-y-1">
+                            <a href="#"
+                                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Profil</a>
+
+                            <a href="#"
+                                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Paramètre</a>
+
+                            <a href="#"
+                                class="block px-3 py-2 rounded-md text-base font-medium text-carmine hover:text-white hover:bg-gray-700">Déconnexion</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="flex justify-center">
+
+            <div class="h-full flex">
+
+                <div class="flex-1 relative z-0 flex overflow-hidden">
+                    <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none xl:order-last">
+                        
+
+                        <article>
+                            <!-- Profile header -->
+                            <div>
+                                <div>
+                                    <img class="h-32 w-full object-cover lg:h-48"
+                                        src="https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                                        alt="">
+                                </div>
+                                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                                    <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
+                                        <div class="flex">
+                                            <img class="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
+                                                src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                                                alt="">
+                                        </div>
+                                        <div
+                                            class="mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
+                                            <div class="sm:hidden 2xl:block mt-6 min-w-0 flex-1">
+                                                <h1 class="text-2xl font-bold text-gray-900 truncate">Ricardo Cooper
+                                                </h1>
+                                            </div>
+                                            <div
+                                                class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+                                                <button type="button"
+                                                    class="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                                                    <!-- Heroicon name: solid/mail -->
+                                                    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                        fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                                        <path
+                                                            d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                                    </svg>
+                                                    <span>Message</span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hidden sm:block 2xl:hidden mt-6 min-w-0 flex-1">
+                                        <h1 class="text-2xl font-bold text-gray-900 truncate">Ricardo Cooper</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tabs -->
+                            <div class="mt-6 sm:mt-2 2xl:mt-5">
+                                <div class="border-b border-gray-200">
+                                    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                                        <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+                                            <!-- Current: "border-pink-500 text-gray-900", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+                                            <a href="#"
+                                                class="border-pink-500 text-gray-900 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
+                                                aria-current="page"> Profil </a>
+
+                                            <a href="#"
+                                                class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                                Calendar </a>
+
+                                            <a href="#"
+                                                class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                                Recognition </a>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Description list -->
+                            <div class="mt-6 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                                <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+
+
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">E-mail</dt>
+                                        <dd class="mt-1 text-sm text-gray-900">ricardocooper@example.com</dd>
+                                    </div>
+
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">Title</dt>
+                                        <dd class="mt-1 text-sm text-gray-900">Senior Front-End Developer</dd>
+                                    </div>
+
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">Team</dt>
+                                        <dd class="mt-1 text-sm text-gray-900">Product Development</dd>
+                                    </div>
+
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">Location</dt>
+                                        <dd class="mt-1 text-sm text-gray-900">San Francisco</dd>
+                                    </div>
+
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">Sits</dt>
+                                        <dd class="mt-1 text-sm text-gray-900">Oasis, 4th floor</dd>
+                                    </div>
+
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">Salary</dt>
+                                        <dd class="mt-1 text-sm text-gray-900">$145,000</dd>
+                                    </div>
+
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">Birthday</dt>
+                                        <dd class="mt-1 text-sm text-gray-900">June 8, 1990</dd>
+                                    </div>
+
+                                    <div class="sm:col-span-2">
+                                        <dt class="text-sm font-medium text-gray-500 first-letter:uppercase">à propos</dt>
+                                        <dd class="mt-1 max-w-prose text-sm text-gray-900 space-y-5">
+                                            <p>Tincidunt quam neque in cursus viverra orci, dapibus nec tristique.
+                                                Nullam ut sit
+                                                dolor consectetur urna, dui cras nec sed. Cursus risus congue arcu
+                                                aenean
+                                                posuere aliquam.</p>
+                                            <p>Et vivamus lorem pulvinar nascetur non. Pulvinar a sed platea rhoncus ac
+                                                mauris
+                                                amet. Urna, sem pretium sit pretium urna, senectus vitae. Scelerisque
+                                                fermentum,
+                                                cursus felis dui suspendisse velit pharetra. Augue et duis cursus
+                                                maecenas eget
+                                                quam lectus. Accumsan vitae nascetur pharetra rhoncus praesent dictum
+                                                risus
+                                                suspendisse.</p>
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                            <!-- Team member list -->
+                            <div class="mt-8 max-w-5xl mx-auto px-4 pb-12 sm:px-6 lg:px-8">
+                                <h2 class="text-sm font-medium text-gray-500">Team members</h2>
+                                <div class="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                    <div
+                                        class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-pink-500">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-10 w-10 rounded-full"
+                                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <a href="#" class="focus:outline-none">
+                                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                                <p class="text-sm font-medium text-gray-900">Leslie Alexander</p>
+                                                <p class="text-sm text-gray-500 truncate">Co-Founder / CEO</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-pink-500">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-10 w-10 rounded-full"
+                                                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <a href="#" class="focus:outline-none">
+                                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                                <p class="text-sm font-medium text-gray-900">Michael Foster</p>
+                                                <p class="text-sm text-gray-500 truncate">Co-Founder / CTO</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-pink-500">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-10 w-10 rounded-full"
+                                                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <a href="#" class="focus:outline-none">
+                                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                                <p class="text-sm font-medium text-gray-900">Dries Vincent</p>
+                                                <p class="text-sm text-gray-500 truncate">Manager, Business Relations
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-pink-500">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-10 w-10 rounded-full"
+                                                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <a href="#" class="focus:outline-none">
+                                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                                <p class="text-sm font-medium text-gray-900">Lindsay Walton</p>
+                                                <p class="text-sm text-gray-500 truncate">Front-end Developer</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </main>
+
+                </div>
+            </div>
+        </div>
+        <footer class="bg-gunmetal" aria-labelledby="footer-heading">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="grid grid-cols-2 gap-8 xl:col-span-2">
+                        <div class="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Solutions
+                                </h3>
+                                <ul role="list" class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Marketing </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Analytics </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Commerce </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Insights </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-12 md:mt-0">
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Support
+                                </h3>
+                                <ul role="list" class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Pricing </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Documentation
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Guides </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> API Status
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Company
+                                </h3>
+                                <ul role="list" class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> About </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Blog </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Jobs </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Press </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Partners </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-12 md:mt-0">
+                                <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Juridique
+                                </h3>
+                                <ul role="list" class="mt-4 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Mentions
+                                            légales </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Conditions
+                                            générales
+                                            d'utilisation </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="text-base text-gray-200 hover:text-white"> Politique de
+                                            protection des données personnelles </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 xl:mt-0">
+                        <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Abonnez-vous à
+                            notre
+                            newsletter
+                        </h3>
+                        <p class="mt-4 text-base text-gray-200">Les dernières nouvelles envoyés dans votre boîte
+                            mail.</p>
+                        <form class="mt-4 sm:flex sm:max-w-md">
+                            <label for="email-address" class="sr-only">Email address</label>
+                            <input type="email" name="email-address" id="email-address" autocomplete="email" required
+                                class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gunmetal placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-carmine focus:border-carmine focus:placeholder-gray-400"
+                                placeholder="Entrer votre adresse mail">
+                            <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                                <button type="submit"
+                                    class="w-full bg-white border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-gunmetal  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-carmine">S'abonner</button>
                             </div>
                         </form>
                     </div>
                 </div>
+                <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                    <div class="flex space-x-6 md:order-2">
+
+
+                        <a href="#" class="text-gray-300 hover:text-gray-200">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <a href="#" class="text-gray-300 hover:text-gray-200">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+
+                        <a href="#" class="text-gray-300 hover:text-gray-200">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+
+                    </div>
+                    <p class="mt-8 text-base text-gray-300 md:mt-0 md:order-1">&copy; 2020 Workflow, Inc. All rights
+                        reserved.</p>
+                </div>
             </div>
-        </main>
+        </footer>
     </div>
+
+
 </body>
 
 </html>
