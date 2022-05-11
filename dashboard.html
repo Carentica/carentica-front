@@ -35,16 +35,13 @@
             <div class="flex items-center justify-between h-16 px-4 sm:px-0">
               <div class="flex items-center">
                 <div class="flex-shrink-0">
-                  <img class="h-10 invert"
-                  src="images/carentica-logo-texte.svg"
-                  alt="Carentica">
+                  <img class="h-10 invert" src="images/carentica-logo-texte.svg" alt="Carentica">
                 </div>
                 <div class="hidden md:block">
                   <div class="ml-10 flex items-baseline  md:space-x-3 lg:space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#"
-                        class="bg-gray-900 text-white md:px-1  lg:px-3 py-2 rounded-md text-sm font-medium"
-                        aria-current="page">Tableau de bord</a>
+                    <a href="#" class="bg-gray-900 text-white md:px-1  lg:px-3 py-2 rounded-md text-sm font-medium"
+                      aria-current="page">Tableau de bord</a>
 
                     <a href="index.html"
                       class="text-gray-300 hover:bg-gray-700 hover:text-white md:px-1  lg:px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
@@ -248,7 +245,7 @@
                     </div>
                     <div class="mt-5 flex justify-center sm:mt-0">
                       <a href="#"
-                        class="flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        class="flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm text-carmine font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
                         Voir le profil </a>
                     </div>
                   </div>
@@ -272,32 +269,30 @@
                 </div>
               </div>
               <h1 class=" mt-12 text-3xl font-bold text-gunmetal">Derniere formation</h1>
-              <div class="flex rounded-lg h-96 shadow-lg overflow-hidden mt-6">
+              <div class="mt-6 gap-5 flex items-center bg-white">
                 <div class="flex-shrink-0">
-                  <img class="w-64 h-96 object-cover"
+                  <img class="h-72 w-48 object-cover"
                     src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                     alt="">
                 </div>
-                <div class="flex flex-col bg-white p-6">
-                  <div class="flex-1">
-                    <p class="text-sm font-medium text-carmine">
-                      <a href="#" class="hover:underline"> Cours </a>
+                <div class="flex-1 flex flex-col justify-between">
+                  <div class="flex-1 mt-4">
+                    <p class="text-sm font-medium text-indigo-600">
+                      <a href="#" class="hover:underline"> Article </a>
                     </p>
-                    <a href="#" class="block">
-                      <p class="text-xl font-semibold text-gray-900">Titre</p>
-                      <p class="text-base text-gray-500">Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Architecto accusantium
-                        praesentium eius, ut atque fuga culpa, similique sequi cum
-                        eos quis dolorum.</p>
+                    <a href="#" class="block mt-2">
+                      <p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
+                      <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa,
+                        similique sequi cum eos quis dolorum.</p>
                     </a>
-
                   </div>
-                  <div class="mb-16 w-full bg-gray-200 rounded-full">
+                  <div class="mt-4 w-full bg-gray-200 rounded-full">
                     <div
                       class="bg-teal-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
                       style="width: 25%"> 25%</div>
                   </div>
-                  <div class="flex items-center">
+                  <div class="mt-6 flex items-center">
                     <div class="flex-shrink-0">
                       <a href="#">
                         <span class="sr-only">Roel Aufderehar</span>
@@ -306,28 +301,34 @@
                           alt="">
                       </a>
                     </div>
-                    <div class="flex flex-row w-full justify-between items-center">
+                    <div class="w-full flex justify-between items-center">
                       <div class="ml-3">
                         <p class="text-sm font-medium text-gray-900">
                           <a href="#" class="hover:underline"> Roel Aufderehar </a>
                         </p>
-                        <div class="flex space-x-1 text-sm text-gray-500 items-center">
+                        <div class="flex space-x-1 text-sm text-gray-500">
                           <time datetime="2020-03-16"> Mar 16, 2020 </time>
                           <span aria-hidden="true"> &middot; </span>
                           <span> 6 min read </span>
                         </div>
                       </div>
-                      <button type="button"
-                        class="px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-carmine hover:bg-gunmetal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Reprendre
-                      </button>
+                      <div class="flex gap-4 mr-2">
+                        <button type="button"
+                          class="flex h-12 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-carmine hover:bg-gunmetal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Suivre
+                          <img src="images/signet-pour-les-favoris.png" class="h-6">
+                        </button>
+                        <button type="button"
+                          class="px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-carmine hover:bg-gunmetal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 h-12">Reprendre
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <h1 class="text-3xl font-bold text-gunmetal mt-12">Nouveaux cours</h1>
-              <ul role="list" class="flex justify-between mt-6">
-                <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+              <h1 class="text-3xl font-bold text-gunmetal mt-12">Nouvelles formations</h1>
+              <ul role="list" class="flex justify-between mt-6 gap-4">
+                <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200 w-72">
                   <div class="flex-1 flex flex-col p-8">
                     <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full"
                       src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
@@ -345,12 +346,12 @@
                       </dd>
                     </dl>
                   </div>
-                  <a href="" class="text-2xl font-bold text-gunmetal mb-4 hover:text-gray-400">
-                    commencer
-                  </a>
+                    <div class="h-15">
+                      <button type="button" class="inline-flex items-center px-4 py-2 my-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-carmine hover:bg-gunmetal">commencer</button>
+                  </div>
                 </li>
 
-                <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+                <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200 w-72">
                   <div class="flex-1 flex flex-col p-8">
                     <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full"
                       src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
@@ -368,12 +369,12 @@
                       </dd>
                     </dl>
                   </div>
-                  <a href="" class="text-2xl font-bold text-gunmetal mb-4 hover:text-gray-400">
-                    commencer
-                  </a>
+                  <div class="w-full h-15">
+                    <button type="button" class="inline-flex items-center px-4 py-2 my-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-carmine hover:bg-gunmetal">commencer</button>
+                  </div>
                 </li>
 
-                <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
+                <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200 w-72">
                   <div class="flex-1 flex flex-col p-8">
                     <img class="w-32 h-32 flex-shrink-0 mx-auto rounded-full"
                       src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
@@ -391,9 +392,9 @@
                       </dd>
                     </dl>
                   </div>
-                  <a href="" class="text-2xl font-bold text-gunmetal mb-4 hover:text-gray-400">
-                    commencer
-                  </a>
+                  <div class="w-full h-15">
+                    <button type="button" class="inline-flex items-center px-4 py-2 my-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-carmine hover:bg-gunmetal">commencer</button>
+                  </div>
                 </li>
                 <!-- More people... -->
               </ul>
@@ -444,49 +445,31 @@
                             natus. Est sit autem mollitia.</p>
                         </div>
                       </li>
-
-                      <li class="py-5">
-                        <div class="relative focus-within:ring-2 focus-within:ring-cyan-500">
-                          <h3 class="text-sm font-semibold text-gray-800">
-                            <a href="#" class="hover:underline focus:outline-none">
-                              <!-- Extend touch target to entire panel -->
-                              <span class="absolute inset-0" aria-hidden="true"></span>
-                              Office closed on July 2nd
-                            </a>
-                          </h3>
-                          <p class="mt-1 text-sm text-gray-600 line-clamp-2">Tenetur libero
-                            voluptatem rerum occaecati qui est molestiae exercitationem.
-                            Voluptate quisquam iure assumenda consequatur ex et recusandae.
-                            Alias consectetur voluptatibus. Accusamus a ab dicta et.
-                            Consequatur quis dignissimos voluptatem nisi.</p>
-                        </div>
-                      </li>
                     </ul>
                   </div>
                   <div class="mt-6">
                     <a href="#"
-                      class="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                      class="w-full flex justify-center items-center text-carmine px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
                       Voir plus </a>
                   </div>
                 </div>
               </div>
             </section>
 
-                  <div class="wrapper px-2 w-full">
-                <form action="" class="max-w-sm bg-gray-100 px-3 py-5 rounded shadow-lg my-10 m-auto">
-                  <label for="contact" class="font-bold">Contacter un coach</label>
-                  <div class="flex gap-4">
-                    <div class=" items-center bg-white border border-gray-100 rounded w-full">
-                      <input type="text" placeholder="Email" id="contact"
-                        class="w-full focus:ring-carmine focus:border-carmine"
-                        autocomplete="off" />
-                    </div>
-                    <button type="submit" class="text-white bg-carmine hover:bg-gunmetal px-4 py-2 rounded">
-                      Envoyer
-                    </button>
+            <div class="wrapper px-2 w-full">
+              <form action="" class="max-w-sm bg-gray-100 px-3 py-5 rounded shadow-lg my-10 m-auto">
+                <label for="contact" class="font-bold">Contacter un coach:</label>
+                <div class="flex flex-col gap-4">
+                  <div class=" items-center bg-white border border-gray-100 rounded w-full">
+                    <textarea type="text" id="contact" class="w-full focus:ring-carmine focus:border-carmine"
+                      autocomplete="off"></textarea>
                   </div>
-                </form>
-              </div>
+                  <button type="submit" class="text-white bg-carmine hover:bg-gunmetal px-4 py-2 rounded">
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+            </div>
 
           </div>
         </div>
