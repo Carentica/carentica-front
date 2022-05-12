@@ -9,3 +9,11 @@ btnMenu.addEventListener('click', (e) => {
     }
     mobileMenu.classList.toggle("hidden");
 })
+
+const profilMenu = document.getElementById("profilMenu");
+const profilList = document.getElementById("profilList");
+profilMenu.addEventListener('click', (e) => {
+    
+    profilList.classList.toggle("hidden");
+})
+
