@@ -63,7 +63,7 @@
                                 class="hidden absolute inset-y-0 right-0  gap-2 items-center pr-1 sm:static sm:inset-auto  sm:pr-0">
 
 
-                                <!-- Profile dropdown -->
+                                <!-- Profil dropdown -->
                                 <div class="hidden   md:flex lg:items-center lg:justify-end lg:inset-y-0 lg:left-0">
                                     <span class="inline-flex rounded-md shadow">
                                         <a href="inscription.html"
@@ -104,7 +104,7 @@
                                         </svg>
                                     </a>
 
-                                    <!-- Profile dropdown -->
+                                    <!-- Profil dropdown -->
                                     <div class="ml-3 relative">
                                         <div>
                                             <button id="profilMenu" type="button"
@@ -272,6 +272,45 @@
                     </button>
                 </div>
             </header>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
+                <div class="sm:hidden">
+                    <label for="tabs" class="sr-only">Select a tab</label>
+                    <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+                    <select id="tabs" name="tabs"
+                        class="block w-full pl-3 pr-10 py-2 text-base sm:text-sm rounded-md">
+                        <option selected>Tableau de bord</option>
+
+                        <option>Messagerie</option>
+
+                        <option >Profil</option>
+
+                        <option>Paramètre</option>
+                    </select>
+                </div>
+                <div class="hidden sm:block">
+                    <div class="border-b border-gray-700">
+                        <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+                            <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+                            <a href="dashboard.html"
+                                class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                Tableau de bord </a>
+                            <a href="messagerie.html"
+                                class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                Messagerie </a>
+
+                            <a href="profil.html"
+                                class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                Profil </a>
+
+                            <a href="setting_profil.html"
+                                class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
+                                aria-current="page"> Paramètre </a>
+
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -298,7 +337,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
-                                    <span class="truncate"> Profile </span>
+                                    <span class="truncate"> Profil </span>
                                 </a>
 
                                 <a href="setting_compte.html"
