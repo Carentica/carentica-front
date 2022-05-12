@@ -1,7 +1,7 @@
 const btnMenu = document.getElementById("btnMenu");
 const svgMenu = document.querySelectorAll("#btnMenu svg");
 
-const mobileMenu = document.getElementById("mobileMenu");
+const mobileMenu = document.getElementById("mobile-menu");
 btnMenu.addEventListener('click', (e) => {
     for (let child of svgMenu) {
         child.classList.toggle("block");
