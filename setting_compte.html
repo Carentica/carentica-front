@@ -96,8 +96,7 @@
                                         class="bg-gray-800 p-1 fill-gray-400 rounded-full hover:fill-white ">
                                         <span class="sr-only">View notifications</span>
                                         <!-- Heroicon name: outline/bell -->
-                                         <svg class="h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                             <path
                                                 d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
@@ -228,16 +227,15 @@
                                 </svg>
                             </button>
                             <a href="messagerie.html"
-                                        class="bg-gray-800 p-1 fill-gray-400 rounded-full hover:fill-white ">
-                                        <span class="sr-only">View notifications</span>
-                                        <!-- Heroicon name: outline/bell -->
-                                         <svg class="h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
-                                        </svg>
-                                    </a>
+                                class="bg-gray-800 p-1 fill-gray-400 rounded-full hover:fill-white ">
+                                <span class="sr-only">View notifications</span>
+                                <!-- Heroicon name: outline/bell -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
+                                </svg>
+                            </a>
                         </div>
 
                         <div class="mt-3 px-2 space-y-1">
@@ -259,7 +257,7 @@
                 </div>
                 <div class="pt-2 relative mx-auto text-gray-600">
                     <input
-                        class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                        class="border-2 border-gray-500 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
                         type="search" name="search" placeholder="Search">
                     <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
                         <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -271,19 +269,19 @@
                         </svg>
                     </button>
                 </div>
-                
+
             </header>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
                 <div class="sm:hidden">
                     <label for="tabs" class="sr-only">Select a tab</label>
                     <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-                    <select id="tabs" name="tabs"
-                        class="block w-full pl-3 pr-10 py-2 text-base sm:text-sm rounded-md">
+                    <select id="tabs" name="tabs" class="block w-full pl-3 pr-10 py-2 text-base sm:text-sm rounded-md">
                         <option selected>Tableau de bord</option>
+                        <option>Statistiques</option>
 
                         <option>Messagerie</option>
 
-                        <option >Profil</option>
+                        <option>Profil</option>
 
                         <option>Paramètre</option>
                     </select>
@@ -295,6 +293,11 @@
                             <a href="dashboard.html"
                                 class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                                 Tableau de bord </a>
+
+                            <a href="dashboard_stat.html"
+                                class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                Statistiques </a>
+
                             <a href="messagerie.html"
                                 class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                                 Messagerie </a>
@@ -314,157 +317,163 @@
             </div>
         </div>
 
-        
-        
 
-            <main class="relative -mt-32">
-                <div class="max-w-screen-xl mx-auto pb-6 px-4 sm:px-6 lg:pb-16 lg:px-8">
-                    <div class="bg-white rounded-lg border border-gunmetal shadow overflow-hidden">
-                        <div class="divide-y divide-gray-200 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
-                            <aside class="py-6 lg:col-span-3">
-                                <nav class="space-y-1">
-                                    <!-- Current: "bg-teal-50 border-teal-500 text-teal-700 hover:bg-teal-50 hover:text-teal-700", Default: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
-                                    <a href="setting_profil.html"
-                                        class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium"
-                                        aria-current="page">
-                                        <!--
+
+
+        <main class="relative -mt-32">
+            <div class="max-w-screen-xl mx-auto pb-6 px-4 sm:px-6 lg:pb-16 lg:px-8">
+                <div class="bg-white rounded-lg border border-gunmetal shadow overflow-hidden">
+                    <div class="divide-y divide-gray-200 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
+                        <aside class="py-6 lg:col-span-3">
+                            <nav class="space-y-1">
+                                <!-- Current: "bg-teal-50 border-teal-500 text-teal-700 hover:bg-teal-50 hover:text-teal-700", Default: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
+                                <a href="setting_profil.html"
+                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium"
+                                    aria-current="page">
+                                    <!--
                             Heroicon name: outline/user-circle
           
                             Current: "text-teal-500 group-hover:text-teal-500", Default: "text-gray-400 group-hover:text-gray-500"
                           -->
-                                        <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <span class="truncate"> Profil </span>
-                                    </a>
+                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span class="truncate"> Profil </span>
+                                </a>
 
-                                    <a href="setting_compte.html"
-                                        class="border-carmine  bg-gunmetal text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                        <!-- Heroicon name: outline/cog -->
-                                        <svg class="text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                        <span class="truncate"> Compte </span>
-                                    </a>
+                                <a href="setting_compte.html"
+                                    class="border-carmine  bg-gunmetal text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
+                                    <!-- Heroicon name: outline/cog -->
+                                    <svg class="text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <span class="truncate"> Compte </span>
+                                </a>
 
-                                
 
-                                    <a href="#"
-                                        class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                        <!-- Heroicon name: outline/bell -->
-                                        <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                                        </svg>
-                                        <span class="truncate"> Notifications </span>
-                                    </a>
 
-                                    <a href="setting_facturation.html"
-                                        class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                        <!-- Heroicon name: outline/credit-card -->
-                                        <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                                        </svg>
-                                        <span class="truncate"> Facturation </span>
-                                    </a>
+                                <a href="#"
+                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
+                                    <!-- Heroicon name: outline/bell -->
+                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                    </svg>
+                                    <span class="truncate"> Notifications </span>
+                                </a>
 
-                                    <a href="#"
-                                        class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
-                                        <!-- Heroicon name: outline/view-grid-add -->
-                                        <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
-                                        </svg>
-                                        <span class="truncate"> Integrations </span>
-                                    </a>
-                                </nav>
-                            </aside>
+                                <a href="setting_facturation.html"
+                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
+                                    <!-- Heroicon name: outline/credit-card -->
+                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                    </svg>
+                                    <span class="truncate"> Facturation </span>
+                                </a>
 
-                            <form class="divide-y divide-gray-200 lg:col-span-9" action="#" method="POST">
-                                <!-- Profil section -->
-                                <div class="py-6 px-4 sm:p-6 lg:pb-8">
-                                    <div>
-                                        <h2 class="text-lg leading-6 font-medium text-gunmetal">Compte</h2>
-                                        <!-- <p class="mt-1 text-sm text-gray-500">Ces informations seront affichées
+                                <a href="#"
+                                    class="focus:border-carmine text-gunmetal focus:bg-gunmetal focus:text-white group border-l-4 px-3 py-2 flex items-center text-sm font-medium">
+                                    <!-- Heroicon name: outline/view-grid-add -->
+                                    <svg class=" group-hover:text-gray-500 text-carmine group-focus:text-white flex-shrink-0 -ml-1 mr-3 h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+                                    </svg>
+                                    <span class="truncate"> Integrations </span>
+                                </a>
+                            </nav>
+                        </aside>
+
+                        <form class="divide-y divide-gray-200 lg:col-span-9" action="#" method="POST">
+                            <!-- Profil section -->
+                            <div class="py-6 px-4 sm:p-6 lg:pb-8">
+                                <div>
+                                    <h2 class="text-lg leading-6 font-medium text-gunmetal">Compte</h2>
+                                    <!-- <p class="mt-1 text-sm text-gray-500">Ces informations seront affichées
                                             publiquement, alors faites attention à ce que vous partagez.</p> -->
-                                    </div>
+                                </div>
 
-                                    <div class="mt-6 flex flex-col lg:flex-row">
-                                        <div class="flex-grow space-y-6">
-                                            <div>
-                                                <label for="username" class="block text-sm font-medium text-gray-700">
-                                                    Nom d'utilisateur</label>
-                                                <div class="mt-1 rounded-md shadow-sm flex">
-                                                    
-                                                    <input type="text" name="username" id="username"
-                                                        autocomplete="username"
-                                                        class="focus:ring-carmine focus:border-carmine flex-grow block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
-                                                        placeholder="deblewis">
-                                                </div>
+                                <div class="mt-6 flex flex-col lg:flex-row">
+                                    <div class="flex-grow space-y-6">
+                                        <div>
+                                            <label for="username" class="block text-sm font-medium text-gray-700">
+                                                Nom d'utilisateur</label>
+                                            <div class="mt-1 rounded-md shadow-sm flex">
+
+                                                <span
+                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-500 bg--gray-50 text-gray-500 sm:text-sm">
+                                                    carentica.com/ </span>
+                                                <input type="text" name="username" id="username" autocomplete="username"
+                                                    value="lisamarie"
+                                                    class="flex-1 block w-full min-w-0 border-gray-500 rounded-none rounded-r-md text-gray-900 sm:text-sm focus:ring-carmine focus:border-carmine">
                                             </div>
-
-                                            
-                                        </div>
-
-                                        
-                                    </div>
-
-                                    <div class="mt-6 grid grid-cols-12 gap-6">
-                                        <div class="col-span-12 sm:col-span-6">
-                                            <label for="motDePasse"
-                                                class="block text-sm font-medium text-gray-700">Mot de passe</label>
-                                            <input type="password" name="motDePasse" id="motDePasse"
-                                                autocomplete="given-name"
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-                                        </div>
-
-                                        <div class="col-span-12 sm:col-span-6">
-                                            <label for="confirm_pass"
-                                                class="block text-sm font-medium text-gray-700">Confirmation mot de passe</label>
-                                            <input type="password" name="confirm_pass" id="confirm_pass"
-                                                autocomplete="family-name"
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-                                        </div>
-
-                                        <div class="col-span-12">
-                                            <label for="ail" class="block text-sm font-medium text-gray-700">Adresse
-                                                mail</label>
-                                            <input type="email" name="mail" id="mail"
-                                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-
                                         </div>
                                     </div>
-                                    <div class="flex flex-col sm:justify-end sm:flex-row ">
-                                        <div class="px-4 py-3 sm:w-1/3   sm:px-6">
-                                            <button type="submit"
-                                                class="bg-carmine border w-full  border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gunmetal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Enregistrer</button>
-                                        </div>
-                                        <div class="px-4 py-3 sm:w-1/3  sm:px-6">
-                                            <button type="submit"
-                                                class="bg-white text-gunmetal border w-full  border-gunmetal rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Annuler</button>
-                                        </div>
+
+
+                                </div>
+
+
+
+
+                                <div class="mt-6 grid grid-cols-12 gap-6">
+                                    <div class="col-span-12 sm:col-span-6">
+                                        <label for="motDePasse" class="block text-sm font-medium text-gray-700">Mot de
+                                            passe</label>
+                                        <input type="password" name="motDePasse" id="motDePasse"
+                                            autocomplete="given-name"
+                                            class="mt-1 block w-full border border-gray-500 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
                                     </div>
-                            </form>
-                        </div>
+
+                                    <div class="col-span-12 sm:col-span-6">
+                                        <label for="confirm_pass"
+                                            class="block text-sm font-medium text-gray-700">Confirmation mot de
+                                            passe</label>
+                                        <input type="password" name="confirm_pass" id="confirm_pass"
+                                            autocomplete="family-name"
+                                            class="mt-1 block w-full border border-gray-500 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+                                    </div>
+
+                                    <div class="col-span-12">
+                                        <label for="ail" class="block text-sm font-medium text-gray-700">Adresse
+                                            mail</label>
+                                        <input type="email" name="mail" id="mail"
+                                            class="mt-1 block w-full border border-gray-500 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+
+                                    </div>
+                                </div>
+                                <div class="flex flex-col sm:justify-end sm:flex-row ">
+                                    <div class="px-4 py-3 sm:w-1/3  sm:px-6">
+                                        <button type="submit"
+                                            class="bg-white text-gunmetal border w-full  border-gunmetal rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Annuler</button>
+                                    </div>
+                                    <div class="px-4 py-3 sm:w-1/3   sm:px-6">
+                                        <button type="submit"
+                                            class="bg-carmine border w-full  border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gunmetal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Enregistrer</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </main>
-        
+            </div>
+        </main>
+
 
         <footer class="bg-gunmetal" aria-labelledby="footer-heading">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
