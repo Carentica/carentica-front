@@ -292,6 +292,11 @@
                             <a href="dashboard.html"
                                 class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                                 Tableau de bord </a>
+
+                            <a href="dashboard_stat.html"
+                                class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                                Statistiques </a>
+
                             <a href="messagerie.html"
                                 class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                                 Messagerie </a>
@@ -369,12 +374,14 @@
 
 
                                 <div class="shadow-lg rounded-lg overflow-hidden">
-                                    <div class="py-3 px-5 bg-gray-50">Line chart</div>
-                                    <canvas class="p-10" id="chartLine"></canvas>
+                                    <h1 class="text-3xl font-bold text-gunmetal">Statistiques</h1>
+                                    <canvas id="chartLine"></canvas>
                                 </div>
 
                                 <!-- Required chart.js -->
                                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 
                                 <!-- Chart line -->
                                 <script>
@@ -402,6 +409,7 @@
                                         configLineChart
                                     );
                                 </script>
+
                             </div>
                             <!-- Right column -->
                             <div class="grid grid-cols-1 gap-4">
