@@ -96,8 +96,7 @@
                                         class="bg-gray-800 p-1 fill-gray-400 rounded-full hover:fill-white ">
                                         <span class="sr-only">View notifications</span>
                                         <!-- Heroicon name: outline/bell -->
-                                         <svg class="h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                             <path
                                                 d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
@@ -228,16 +227,15 @@
                                 </svg>
                             </button>
                             <a href="messagerie.html"
-                                        class="bg-gray-800 p-1 fill-gray-400 rounded-full hover:fill-white ">
-                                        <span class="sr-only">View notifications</span>
-                                        <!-- Heroicon name: outline/bell -->
-                                         <svg class="h-6 w-6"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
-                                        </svg>
-                                    </a>
+                                class="bg-gray-800 p-1 fill-gray-400 rounded-full hover:fill-white ">
+                                <span class="sr-only">View notifications</span>
+                                <!-- Heroicon name: outline/bell -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
+                                </svg>
+                            </a>
                         </div>
 
                         <div class="mt-3 px-2 space-y-1">
@@ -276,13 +274,12 @@
                 <div class="sm:hidden">
                     <label for="tabs" class="sr-only">Select a tab</label>
                     <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-                    <select id="tabs" name="tabs"
-                        class="block w-full pl-3 pr-10 py-2 text-base sm:text-sm rounded-md">
+                    <select id="tabs" name="tabs" class="block w-full pl-3 pr-10 py-2 text-base sm:text-sm rounded-md">
                         <option selected>Tableau de bord</option>
 
                         <option>Messagerie</option>
 
-                        <option >Profil</option>
+                        <option>Profil</option>
 
                         <option>Paramètre</option>
                     </select>
@@ -394,107 +391,174 @@
                             </nav>
                         </aside>
 
-                        <form class="divide-y divide-gray-200 lg:col-span-9" action="#" method="POST">
-                            <!-- Profil section -->
-                            <div class="py-6 px-4 sm:p-6 lg:pb-8">
-                                <div>
-                                    <h2 class="text-lg leading-6 font-medium text-gunmetal">Profil</h2>
-                                    <p class="mt-1 text-sm text-gray-500">Ces informations seront affichées
+                        <form class="divide-y divide-gray-200 py-6 px-4 lg:col-span-9">
+                            <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-6 sm:gap-x-6 mb-4">
+                                <div class="sm:col-span-6">
+                                    <h2 class="text-xl font-medium text-blue-gray-900">Profil</h2>
+                                    <p class="mt-1 text-sm text-blue-gray-500">Ces informations seront affichées
                                         publiquement, alors faites attention à ce que vous partagez.</p>
                                 </div>
 
-                                <div class="mt-6 flex flex-col lg:flex-row">
-                                    <div class="flex-grow space-y-6">
+                                <div class="sm:col-span-3">
+                                    <label for="first-name" class="block text-sm font-medium text-blue-gray-900">Prénom
+                                    </label>
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                        class="mt-1 block w-full border-blue-gray-300 rounded-md shadow-sm text-blue-gray-900 sm:text-sm focus:ring-carmine focus:border-carmine">
+                                </div>
 
-                                        <div>
-                                            <label for="about" class="block text-sm font-medium text-gray-700"> À
-                                                propos
-                                            </label>
-                                            <div class="mt-1">
-                                                <textarea id="about" name="about" rows="6"
-                                                    class="shadow-sm focus:ring-carmine focus:border-carmine mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"></textarea>
-                                            </div>
-                                            <p class="mt-2 text-sm text-gray-500">
-                                                Brève description de votre profil.</p>
-                                        </div>
+                                <div class="sm:col-span-3">
+                                    <label for="last-name" class="block text-sm font-medium text-blue-gray-900"> Nom
+                                    </label>
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                        class="mt-1 block w-full border-blue-gray-300 rounded-md shadow-sm text-blue-gray-900 sm:text-sm focus:ring-carmine focus:border-carmine">
+                                </div>
+
+                                <div class="sm:col-span-6">
+                                    <label for="username" class="block text-sm font-medium text-blue-gray-900"> Nom
+                                        d'utilisateur </label>
+                                    <div class="mt-1 flex rounded-md shadow-sm">
+                                        <span
+                                            class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-blue-gray-300 bg-blue-gray-50 text-blue-gray-500 sm:text-sm">
+                                            carentica.com/ </span>
+                                        <input type="text" name="username" id="username" autocomplete="username"
+                                            value="lisamarie"
+                                            class="flex-1 block w-full min-w-0 border-blue-gray-300 rounded-none rounded-r-md text-blue-gray-900 sm:text-sm focus:ring-carmine focus:border-carmine">
                                     </div>
+                                </div>
 
-                                    <div class="mt-6 flex-grow lg:mt-0 lg:ml-6 lg:flex-grow-0 lg:flex-shrink-0">
-                                        <p class="text-sm font-medium text-gray-700" aria-hidden="true">Photo</p>
-                                        <div class="mt-1 lg:hidden">
-                                            <div class="flex items-center">
-                                                <div class="flex-shrink-0 inline-block rounded-full overflow-hidden h-12 w-12"
-                                                    aria-hidden="true">
-                                                    <img class="rounded-full h-full w-full"
-                                                        src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=320&h=320&q=80"
-                                                        alt="">
-                                                </div>
-                                                <div class="ml-5 rounded-md shadow-sm">
-                                                    <div
-                                                        class="group relative border border-gray-300 rounded-md py-2 px-3 flex items-center justify-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-sky-500">
-                                                        <label for="mobile-user-photo"
-                                                            class="relative text-sm leading-4 font-medium text-gray-700 pointer-events-none">
-                                                            <span>Changer</span>
-                                                            <span class="sr-only"> user photo</span>
-                                                        </label>
-                                                        <input id="mobile-user-photo" name="user-photo" type="file"
-                                                            class="absolute w-full h-full opacity-0 cursor-pointer border-gray-300 rounded-md">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="hidden relative rounded-full overflow-hidden lg:block">
-                                            <img class="relative rounded-full w-40 h-40"
-                                                src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=320&h=320&q=80"
-                                                alt="">
-                                            <label for="desktop-user-photo"
-                                                class="absolute inset-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center text-sm font-medium text-white opacity-0 hover:opacity-100 focus-within:opacity-100">
-                                                <span>Changer</span>
-                                                <span class="sr-only"> photo de Profil</span>
-                                                <input type="file" id="desktop-user-photo" name="user-photo"
+                                <div class="sm:col-span-6">
+                                    <label for="photo" class="block text-sm font-medium text-blue-gray-900"> Photo
+                                    </label>
+                                    <div class="mt-1 flex items-center">
+                                        <img class="inline-block h-12 w-12 rounded-full"
+                                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=256&h=256&q=80"
+                                            alt="">
+                                        <div class="ml-4 flex">
+                                            <div
+                                                class="relative bg-white py-2 px-3 border border-blue-gray-300 rounded-md shadow-sm flex items-center cursor-pointer hover:bg-blue-gray-50 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-blue-gray-50 focus-within:ring-blue-500">
+                                                <label for="user-photo"
+                                                    class="relative text-sm font-medium text-blue-gray-900 pointer-events-none">
+                                                    <span>Changer</span>
+                                                    <span class="sr-only"> user photo</span>
+                                                </label>
+                                                <input id="user-photo" name="user-photo" type="file"
                                                     class="absolute inset-0 w-full h-full opacity-0 cursor-pointer border-gray-300 rounded-md">
-                                            </label>
+                                            </div>
+                                            <button type="button"
+                                                class="ml-3 bg-transparent py-2 px-3 border border-transparent rounded-md text-sm font-medium text-blue-gray-900 hover:text-blue-gray-700 focus:outline-none focus:border-blue-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-gray-50 focus:ring-carmine">Retirer</button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="mt-6 grid grid-cols-12 gap-6">
-                                    <div class="col-span-12 sm:col-span-6">
-                                        <label for="first-name"
-                                            class="block text-sm font-medium text-gray-700">Prénom</label>
-                                        <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+                                <div class="sm:col-span-6">
+                                    <label for="description" class="block text-sm font-medium text-blue-gray-900"> À
+                                        propos </label>
+                                    <div class="mt-1">
+                                        <textarea id="description" name="description" rows="4"
+                                            class="block w-full border border-blue-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-carmine focus:border-carmine"></textarea>
                                     </div>
-
-                                    <div class="col-span-12 sm:col-span-6">
-                                        <label for="last-name"
-                                            class="block text-sm font-medium text-gray-700">Nom</label>
-                                        <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-                                    </div>
-
-                                    <div class="col-span-12">
-                                        <label for="ail" class="block text-sm font-medium text-gray-700">Adresse
-                                            mail</label>
-                                        <input type="email" name="mail" id="mail"
-                                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-
-                                        <div class="relative flex items-start mt-2">
-                                            <div class="flex items-center h-5">
-                                                <input id="comments" aria-describedby="comments-description"
-                                                    name="comments" type="checkbox"
-                                                    class="focus:ring-carmine h-4 w-4 text-gunmetal border-gray-300 rounded">
-                                            </div>
-                                            <div class="ml-3 text-sm">
-                                                <label for="comments" class="font-medium text-gunmetal">Rendre
-                                                    visible pour
-                                                    les autres utilisateurs</label>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p class="mt-3 text-sm text-blue-gray-500">Brève description de votre profil.</p>
                                 </div>
+
+                                <div class="sm:col-span-3">
+                                    <label for="country" class="block text-sm font-medium text-blue-gray-900">
+                                        Localisation </label>
+                                    <select id="country" name="country" autocomplete="country-name"
+                                        class="mt-1 block w-full border-blue-gray-300 rounded-md shadow-sm text-blue-gray-900 sm:text-sm focus:ring-carmine focus:border-carmine">
+                                        <option></option>
+                                        <option>United States</option>
+                                        <option>Canada</option>
+                                        <option>Mexico</option>
+                                    </select>
+                                </div>
+                                <p class="text-sm text-blue-gray-500 sm:col-span-6">This account was created on <time
+                                        datetime="2017-01-05T20:35:40">January 5, 2017, 8:35:40 PM</time>.</p>
+                            </div>
+
+                            <div class="pt-6 divide-y divide-gray-200">
+                                <div class="px-4 sm:px-6">
+                                    <div>
+                                        <h2 class="text-lg leading-6 font-medium text-gray-900">Privacy</h2>
+                                        <p class="mt-1 text-sm text-gray-500">Ornare eu a volutpat eget vulputate.
+                                            Fringilla commodo amet.</p>
+                                    </div>
+                                    <ul role="list" class="mt-2 divide-y divide-gray-200">
+                                        <li class="py-4 flex items-center justify-between">
+                                            <div class="flex flex-col">
+                                                <p class="text-sm font-medium text-gray-900"
+                                                    id="privacy-option-1-label">Rendre l'adresse mail public</p>
+                                                <p class="text-sm text-gray-500" id="privacy-option-1-description">Nulla
+                                                    amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</p>
+                                            </div>
+                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
+                                            <button type="button"
+                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-carmine"
+                                                role="switch" aria-checked="true"
+                                                aria-labelledby="privacy-option-1-label"
+                                                aria-describedby="privacy-option-1-description">
+                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                                                <span aria-hidden="true"
+                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                                            </button>
+                                        </li>
+                                        <li class="py-4 flex items-center justify-between">
+                                            <div class="flex flex-col">
+                                                <p class="text-sm font-medium text-gray-900"
+                                                    id="privacy-option-2-label">Rendre le compte privé</p>
+                                                <p class="text-sm text-gray-500" id="privacy-option-2-description">
+                                                    Pharetra morbi dui mi mattis tellus sollicitudin cursus pharetra.
+                                                </p>
+                                            </div>
+                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
+                                            <button type="button"
+                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-carmine"
+                                                role="switch" aria-checked="false"
+                                                aria-labelledby="privacy-option-2-label"
+                                                aria-describedby="privacy-option-2-description">
+                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                                                <span aria-hidden="true"
+                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                                            </button>
+                                        </li>
+                                        <li class="py-4 flex items-center justify-between">
+                                            <div class="flex flex-col">
+                                                <p class="text-sm font-medium text-gray-900"
+                                                    id="privacy-option-3-label">Allow commenting</p>
+                                                <p class="text-sm text-gray-500" id="privacy-option-3-description">
+                                                    Integer amet, nunc hendrerit adipiscing nam. Elementum ame</p>
+                                            </div>
+                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
+                                            <button type="button"
+                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-carmine"
+                                                role="switch" aria-checked="true"
+                                                aria-labelledby="privacy-option-3-label"
+                                                aria-describedby="privacy-option-3-description">
+                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                                                <span aria-hidden="true"
+                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                                            </button>
+                                        </li>
+                                        <li class="py-4 flex items-center justify-between">
+                                            <div class="flex flex-col">
+                                                <p class="text-sm font-medium text-gray-900"
+                                                    id="privacy-option-4-label">Allow mentions</p>
+                                                <p class="text-sm text-gray-500" id="privacy-option-4-description">
+                                                    Adipiscing est venenatis enim molestie commodo eu gravid</p>
+                                            </div>
+                                            <!-- Enabled: "bg-teal-500", Not Enabled: "bg-gray-200" -->
+                                            <button type="button"
+                                                class="bg-gray-200 ml-4 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-carmine"
+                                                role="switch" aria-checked="true"
+                                                aria-labelledby="privacy-option-4-label"
+                                                aria-describedby="privacy-option-4-description">
+                                                <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                                                <span aria-hidden="true"
+                                                    class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"></span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
                                 <div class="flex flex-col sm:justify-end sm:flex-row ">
                                     <div class="px-4 py-3 sm:w-1/3   sm:px-6">
                                         <button type="submit"
@@ -505,6 +569,7 @@
                                             class="bg-white text-gunmetal border w-full  border-gunmetal rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Annuler</button>
                                     </div>
                                 </div>
+                            </div>
                         </form>
                     </div>
                 </div>
