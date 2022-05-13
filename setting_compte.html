@@ -257,7 +257,7 @@
                 </div>
                 <div class="pt-2 relative mx-auto text-gray-600">
                     <input
-                        class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                        class="border-2 border-gray-500 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
                         type="search" name="search" placeholder="Search">
                     <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
                         <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,7 @@
                 <div class="hidden sm:block">
                     <div class="border-b border-gray-700">
                         <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-                            <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+                            <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-500" -->
                             <a href="dashboard.html"
                                 class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                                 Tableau de bord </a>
@@ -409,11 +409,11 @@
                                             <div class="mt-1 rounded-md shadow-sm flex">
 
                                                 <span
-                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-blue-gray-300 bg-blue-gray-50 text-blue-gray-500 sm:text-sm">
+                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-500 bg--gray-50 text-gray-500 sm:text-sm">
                                                     carentica.com/ </span>
                                                 <input type="text" name="username" id="username" autocomplete="username"
                                                     value="lisamarie"
-                                                    class="flex-1 block w-full min-w-0 border-blue-gray-300 rounded-none rounded-r-md text-blue-gray-900 sm:text-sm focus:ring-carmine focus:border-carmine">
+                                                    class="flex-1 block w-full min-w-0 border-gray-500 rounded-none rounded-r-md text-gray-900 sm:text-sm focus:ring-carmine focus:border-carmine">
                                             </div>
                                         </div>
                                     </div>
@@ -422,43 +422,44 @@
                                 </div>
 
 
-                            </div>
 
-                            <div class="mt-6 grid grid-cols-12 gap-6">
-                                <div class="col-span-12 sm:col-span-6">
-                                    <label for="motDePasse" class="block text-sm font-medium text-gray-700">Mot de
-                                        passe</label>
-                                    <input type="password" name="motDePasse" id="motDePasse" autocomplete="given-name"
-                                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-                                </div>
 
-                                <div class="col-span-12 sm:col-span-6">
-                                    <label for="confirm_pass"
-                                        class="block text-sm font-medium text-gray-700">Confirmation mot de
-                                        passe</label>
-                                    <input type="password" name="confirm_pass" id="confirm_pass"
-                                        autocomplete="family-name"
-                                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
-                                </div>
+                                <div class="mt-6 grid grid-cols-12 gap-6">
+                                    <div class="col-span-12 sm:col-span-6">
+                                        <label for="motDePasse" class="block text-sm font-medium text-gray-700">Mot de
+                                            passe</label>
+                                        <input type="password" name="motDePasse" id="motDePasse"
+                                            autocomplete="given-name"
+                                            class="mt-1 block w-full border border-gray-500 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+                                    </div>
 
-                                <div class="col-span-12">
-                                    <label for="ail" class="block text-sm font-medium text-gray-700">Adresse
-                                        mail</label>
-                                    <input type="email" name="mail" id="mail"
-                                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+                                    <div class="col-span-12 sm:col-span-6">
+                                        <label for="confirm_pass"
+                                            class="block text-sm font-medium text-gray-700">Confirmation mot de
+                                            passe</label>
+                                        <input type="password" name="confirm_pass" id="confirm_pass"
+                                            autocomplete="family-name"
+                                            class="mt-1 block w-full border border-gray-500 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+                                    </div>
 
+                                    <div class="col-span-12">
+                                        <label for="ail" class="block text-sm font-medium text-gray-700">Adresse
+                                            mail</label>
+                                        <input type="email" name="mail" id="mail"
+                                            class="mt-1 block w-full border border-gray-500 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-carmine focus:border-carmine sm:text-sm">
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flex flex-col sm:justify-end sm:flex-row ">
-                                <div class="px-4 py-3 sm:w-1/3  sm:px-6">
-                                    <button type="submit"
-                                        class="bg-white text-gunmetal border w-full  border-gunmetal rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Annuler</button>
+                                <div class="flex flex-col sm:justify-end sm:flex-row ">
+                                    <div class="px-4 py-3 sm:w-1/3   sm:px-6">
+                                        <button type="submit"
+                                            class="bg-carmine border w-full  border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gunmetal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Enregistrer</button>
+                                    </div>
+                                    <div class="px-4 py-3 sm:w-1/3  sm:px-6">
+                                        <button type="submit"
+                                            class="bg-white text-gunmetal border w-full  border-gunmetal rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Annuler</button>
+                                    </div>
                                 </div>
-                                <div class="px-4 py-3 sm:w-1/3   sm:px-6">
-                                    <button type="submit"
-                                        class="bg-carmine border w-full  border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-gunmetal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Enregistrer</button>
-                                </div>
-                                
                             </div>
                         </form>
                     </div>
