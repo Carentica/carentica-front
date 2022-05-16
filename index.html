@@ -13,6 +13,10 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    gridTemplateColumns: {
+                        '3-modif': '1fr 1fr 2fr',
+
+                    },
                     colors: {
                         'carmine': '#990012',
                         'gunmetal': '#2c3539',
@@ -541,18 +545,18 @@
                     </div>
                 </div>
                 <img class="w-full h-80 object-cover" src="images/pexels-vito-goričan-10628032.jpg" alt="Trading">
-                </div>
             </div>
         </div>
+    </div>
     </div>
 
 
     <footer class="bg-gunmetal" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-            <div class="lg:flex lg:gap-8">
+            <div class="lg:flex lg:gap-8 lg:justify-between">
                 <div>
-                    <div class="grid grid-cols-2 md:grid-cols-3 sm:gap-2">
+                    <div class="grid grid-cols-2 gap-8 md:grid-cols-3-modif md:gap-2">
                         <div>
                             <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Support</h3>
                             <ul role="list" class="mt-4 space-y-4">
@@ -621,7 +625,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-8 lg:mt-0 justify-self-end">
+                <div class="mt-8 lg:mt-0 ">
                     <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Abonnez-vous à notre
                         newsletter
                     </h3>
