@@ -21,6 +21,29 @@
             }
         }
     </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          * {
+        scrollbar-width: 3px;
+        scrollbar-color: #990012 transparent;
+      }
+    
+      /* Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 3px;
+      }
+    
+      *::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    
+      *::-webkit-scrollbar-thumb {
+        background-color: #990012;
+        /* border-radius: 2px; */
+        border: 3px none #ffffff;
+      }
+    }
+      </style>
     <title>Dashboard</title>
 </head>
 
@@ -387,7 +410,7 @@
 
 
                                 <div>
-                                    <h2 class="text-3xl font-bold text-gunmetal py-4">Dernières formations lancé</h2>
+                                    <h2 class="text-3xl font-bold text-gunmetal py-4">Dernière formation lancée</h2>
 
                                     <section class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
                                         <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
