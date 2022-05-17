@@ -246,574 +246,148 @@
     </nav>
 
 
-    <div class="flex flex-col">
-        <div class="flex items-center justify-center sm:mx-96 mt-4">
-            <div class="sm:flex-auto ml-4">
-                <h1 class="text-xl font-semibold text-gray-900">Lexique</h1>
+  
+
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+
+        <div class="w-6/12">
+            <div class="relative mt-1">
+              <input id="combobox" type="text" class="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-12 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm" role="combobox" aria-controls="options" aria-expanded="false">
+              <button type="button" class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
+                <!-- Heroicon name: solid/selector -->
+                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+          
+              <ul class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" id="options" role="listbox">
+                <!--
+                  Combobox option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+          
+                  Active: "text-white bg-indigo-600", Not Active: "text-gray-900"
+                -->
+                <li class="relative cursor-default select-none py-2 pl-3 pr-9 text-gray-900" id="option-0" role="option" tabindex="-1">
+                  <!-- Selected: "font-semibold" -->
+                  <span class="block truncate">Leslie Alexander</span>
+          
+                  <!--
+                    Checkmark, only display for selected option.
+          
+                    Active: "text-white", Not Active: "text-indigo-600"
+                  -->
+                  <span class="absolute inset-y-0 right-0 flex items-center pr-4 text-indigo-600">
+                    <!-- Heroicon name: solid/check -->
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </li>
+          
+                <!-- More items... -->
+              </ul>
             </div>
-            <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-                <button type="button"
-                    class="inline-flex mr-4 mb-2 ml-4 items-center justify-center rounded-md border border-transparent bg-carmine px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gunmetal sm:w-auto">
-                    Ajouter un mot</button>
-            </div>
-        </div>
-
-        <div class="flex justify-center items-center flex-col sm:flex-row px-8">
-            <div class="bg-white flex items-center border-gray-200 sm:px-6">
-                <div class="sm:flex-1 sm:flex">
-
-                    <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-                        <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" -->
-                        <a href="#" aria-current="page"
-                            class="z-10 bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                            A </a>
-                        <a href="#B"
-                            class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                            B </a>
-                        <a href="#C"
-                            class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium">
-                            C </a>
-                        <span
-                            class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
-                            ... </span>
-                        <a href="#"
-                            class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium">
-                            H </a>
-                        <a href="#"
-                            class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                            I </a>
-                        <a href="#"
-                            class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                            J </a>
-                    </nav>
+          </div>
 
 
+        <section aria-labelledby="quick-links-title">
+            <div
+                class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
+                <h2 class="sr-only" id="quick-links-title">Quick links</h2>
 
+                <div
+                    class="rounded-tl-lg rounded-tr-lg sm:rounded-tr-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium">
+                            <a href="#" class="focus:outline-none">
+                                <!-- Extend touch target to entire panel -->
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Request time off
+                            </a>
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-500">Doloribus dolores nostrum quia qui natus officia quod et
+                            dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+                    </div>
                 </div>
-            </div>
-            <header class="py-10 flex flex-col sm:flex-row gap-2">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h1 class="text-3xl font-bold text-white">Paramètre</h1>
+
+                <div
+                    class="sm:rounded-tr-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium">
+                            <a href="#" class="focus:outline-none">
+                                <!-- Extend touch target to entire panel -->
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Benefits
+                            </a>
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-500">Doloribus dolores nostrum quia qui natus officia quod et
+                            dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+                    </div>
                 </div>
-                <div class="pt-2 relative mx-auto text-gray-600">
-                    <input
-                        class="border-2 border-gray-500 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-                        type="search" name="search" placeholder="Search">
-                    <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
-                        <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-                            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
-                            xml:space="preserve" width="512px" height="512px">
-                            <path
-                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-                        </svg>
-                    </button>
+
+                <div
+                    class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium">
+                            <a href="#" class="focus:outline-none">
+                                <!-- Extend touch target to entire panel -->
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Schedule a one-on-one
+                            </a>
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-500">Doloribus dolores nostrum quia qui natus officia quod et
+                            dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+                    </div>
                 </div>
-            </header>
-        </div>
 
+                <div
+                    class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium">
+                            <a href="#" class="focus:outline-none">
+                                <!-- Extend touch target to entire panel -->
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Payroll
+                            </a>
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-500">Doloribus dolores nostrum quia qui natus officia quod et
+                            dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+                    </div>
+                </div>
 
-        <div>
-            <div class="mt-8 mb-8 flex flex-col items-center">
-                <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8 w-9/12">
-                    <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-                        <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-                            <table class="min-w-full divide-y divide-gray-300">
-                                <thead class="bg-gray-50">
-                                    <tr>
-                                        <th scope="col"
-                                            class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
-                                            Termes</th>
-                                        <th scope="col"
-                                            class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                            Définition</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white">
-                                    <!-- Odd row -->
-                                    <tr>
-                                        <td
-                                            class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                            Amet</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
+                <div
+                    class="sm:rounded-bl-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium">
+                            <a href="#" class="focus:outline-none">
+                                <!-- Extend touch target to entire panel -->
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Submit an expense
+                            </a>
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-500">Doloribus dolores nostrum quia qui natus officia quod et
+                            dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+                    </div>
+                </div>
 
-                                    <tr class="bg-gray-300">
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                        Amet</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td
-                                            class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                            Amet</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                        Amet</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td
-                                            class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                            Amet</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                        Amet</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td
-                                            class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                            Amet</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6">
-                                        Amet</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="B">
-                                            Bibendum</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="B">
-                                        Bibendum</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="B">
-                                            Bibendum</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="B">
-                                        Bibendum</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="B">
-                                            Bibendum</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="B">
-                                        Bibendum</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="B">
-                                            Bibendum</td>
-                                        <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="B">
-                                        Bibendum</td>
-                                    <td class=" px-3 py-4 text-base text-gray-500">Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="C">
-                                            consequat</td>
-                                        <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="C">
-                                        consequat</td>
-                                    <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="C">
-                                            consequat</td>
-                                        <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="C">
-                                        consequat</td>
-                                    <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="C">
-                                            consequat</td>
-                                        <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="C">
-                                        consequat</td>
-                                    <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                            id="C">
-                                            consequat</td>
-                                        <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                            amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                            at
-                                            corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                            saepe,
-                                            obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                            dignissimos
-                                            aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                            voluptas
-                                            illo! Dolore ratione illum distinctio corrupti!
-                                        </td>
-                                        <td
-                                        class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-
-                                    <tr class="bg-gray-300">
-                                        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-base font-medium text-gray-900 sm:pl-6"
-                                        id="C">
-                                        consequat</td>
-                                    <td class="px-3 py-4 text-base text-gray-500">orem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Autem nostrum inventore porro dicta eius
-                                        at
-                                        corporis quas, sequi dolores minima necessitatibus, dolore nobis tempore
-                                        saepe,
-                                        obcaecati perspiciatis suscipit quis. Maiores saepe sint expedita
-                                        dignissimos
-                                        aut. Laudantium, laborum adipisci aut minima enim aspernatur tempora
-                                        voluptas
-                                        illo! Dolore ratione illum distinctio corrupti!
-                                    </td>
-                                    <td
-                                    class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                    <a href="#" class="text-carmine text-base">En savoir plus</a></td>
-                                    </tr>
-                                    <!-- More people... -->
-                                </tbody>
-                            </table>
-                        </div>
+                <div
+                    class="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-500">
+                    <div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium">
+                            <a href="#" class="focus:outline-none">
+                                <!-- Extend touch target to entire panel -->
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Training
+                            </a>
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-500">Doloribus dolores nostrum quia qui natus officia quod et
+                            dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
 
