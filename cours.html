@@ -22,6 +22,29 @@
       }
     }
   </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      * {
+    scrollbar-width: 10px;
+    scrollbar-color: #990012 #1f2937;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #990012;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+  }
+}
+  </style>
   <title>Dashboard</title>
 </head>
 
@@ -249,7 +272,7 @@
       class="hidden md:top-16 md:flex md:w-64 md:flex-col md:fixed md:inset-y-0 h-[calc(100vh_-_65px)] overflow-y-hidden">
       <!-- Sidebar component, swap this element with another sidebar if you like -->
       <div class="flex-1 flex flex-col min-h-0 bg-gray-800">
-        <div class="flex-1 flex flex-col overflow-y-auto">
+        <div class="flex-1 flex flex-col overflow-y-auto ">
           <nav class="flex-1 px-2 py-4 space-y-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#"
@@ -288,6 +311,82 @@
                 class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
 
                 1.5 Leçon 5
+              </a>
+            </div>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+
+              2.0 Module 1
+            </a>
+            <div class="pl-5">
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                2.1 Leçon 1
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+
+                2.2 Leçon 2
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                2.3 Leçon 3
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                2.4 Leçon 4
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                2.5 Leçon 5
+              </a>
+            </div>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+
+              3.0 Module 2
+            </a>
+            <div class="pl-5">
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                3.1 Leçon 1
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+
+                3.2 Leçon 2
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                3.3 Leçon 3
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                3.4 Leçon 4
+              </a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+
+                3.5 Leçon 5
               </a>
             </div>
           </nav>
@@ -736,7 +835,7 @@
               <div class=>
                 <h2 class="sr-only">Customer Reviews</h2>
 
-                <div >
+                <div>
                   <div class="flex text-sm text-gray-500 space-x-4">
                     <div class="flex-none py-2">
                       <img
@@ -747,7 +846,7 @@
                       <h3 class="font-medium text-gray-900">Emily Selman</h3>
                       <p><time datetime="2021-07-16">July 16, 2021</time></p>
 
-                      
+
 
                       <div class="mt-4 prose prose-sm max-w-none text-gray-500">
                         <p>This icon pack is just what I need for my latest project. There's an icon for just about
@@ -766,7 +865,7 @@
                       <h3 class="font-medium text-gray-900">Hector Gibbons</h3>
                       <p><time datetime="2021-07-12">July 12, 2021</time></p>
 
-                      
+
 
                       <div class="mt-4 prose prose-sm max-w-none text-gray-500">
                         <p>Blown away by how polished this icon pack is. Everything looks so consistent and each SVG is
