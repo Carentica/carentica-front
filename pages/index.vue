@@ -1,5 +1,8 @@
 <template>
-  <h1 class="text-red-500">Hello word in red</h1>
+  <div>
+    <NavBar />
+    <h1 class="text-red-500">Hello word in red</h1>
+  </div>
 </template>
 
 <script lang="ts">
