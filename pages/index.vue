@@ -1,5 +1,5 @@
 <template>
-  <Tutorial/>
+  <h1 class="text-red-500">Hello word in red</h1>
 </template>
 
 <script lang="ts">
