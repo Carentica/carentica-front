@@ -1,7 +1,5 @@
 <template>
-  <h1 class="text-3xl font-bold underline text-red-500">
-    Hello world!
-  </h1>
+  <Test />
 </template>
 
 <script setup lang="ts">
@@ -10,5 +8,6 @@ useHead({
   meta: [
     { name: 'description', content: 'My amazing site.' }
   ]
-})
+});
+
 </script>
