@@ -1,5 +1,5 @@
 <template>
     <div>
-        Footer
+        Contenu du footer
     </div>
 </template>

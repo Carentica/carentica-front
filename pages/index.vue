@@ -1,6 +1,6 @@
 <template>
     <div>
-        coucou
+        Ca c'est l'accueil
     </div>
 </template>
 
@@ -11,8 +11,4 @@ useHead({
     { name: 'description', content: 'My amazing site.' }
   ]
 });
-
-// definePageMeta({
-//   layout: 'default',
-// });
 </script>

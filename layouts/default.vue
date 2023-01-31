@@ -1,6 +1,7 @@
 <template>
     <div>
-        test layout
+        <NavBar />
         <slot />
+        <Footer />
     </div>
 </template>
