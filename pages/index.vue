@@ -1,5 +1,5 @@
 <template>
-cc
+<h1 class="text-red-500">cc</h1>
 </template>
 
 <script setup lang="ts">
