@@ -1,7 +1,5 @@
 <template>
-    <div>
-        Ca c'est l'accueil
-    </div>
+cc
 </template>
 
 <script setup lang="ts">
