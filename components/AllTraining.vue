@@ -21,6 +21,13 @@
                                 {{ training.description }}
                             </p>
                         </a>
+                       
+                        <div class="mt-5 flex justify-center py-4 sm:mt-0">
+                            <a href="cursus.html"
+                                class="flex justify-center items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md text-white bg-carmine hover:bg-gunmetal">
+                                Voir cursus de la formation</a>
+                        </div>
+                        
                     </div>
                     <div class="mt-6 flex items-center">
                         <div class="flex-shrink-0">
@@ -108,7 +115,7 @@ const trainings = [
                 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
     },
-]
+];
 
 export default {
     setup() {
@@ -116,5 +123,5 @@ export default {
             trainings,
         }
     },
-}
+};
 </script>

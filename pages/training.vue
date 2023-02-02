@@ -88,5 +88,10 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+  title: 'Carentica - Nos formations',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ]
+});
 </script>
