@@ -4,7 +4,7 @@
     <div class="min-h-full">
       <div class="bg-gray-800 pb-32">
         <!-- Ariane -->
-        <DashboardBreadcrumb />
+        <Breadcrumb />
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
 
