@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <img class="rounded-lg self-center w-full max-h-80 justify-self-center hidden md:block"
-                    src="images/formation-trading-crypto.jpg" alt="Trading">
+                    src="../../assets/images/formation-trading-crypto.jpeg" alt="Trading">
             </div>
         </div>
     </div>
