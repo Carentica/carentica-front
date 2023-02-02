@@ -1,11 +1,8 @@
 <template>
 
   <body class="h-full">
-
-
     <div class="min-h-full">
-      
-      <div class="bg-gray-800 pb-32"> 
+      <div class="bg-gray-800 pb-32">
         <!-- Ariane -->
         <Breadcrumb />
 
@@ -15,21 +12,12 @@
             <div class="max-w-7xl">
               <h1 class="text-3xl font-bold text-white">Tableau de bord</h1>
             </div>
-            <div class="pt-2 relative text-gray-600">
-              <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-                type="search" name="search" placeholder="Search">
-              <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
-                <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-                  viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
-                  width="512px" height="512px">
-                  <path
-                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-                </svg>
-              </button>
-            </div>
+
+            <!-- Search bar -->
+            <Search />
           </header>
 
+          <!-- Navigation -->
           <div class="sm:hidden">
             <label for="tabs" class="sr-only">Select a tab</label>
             <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
@@ -46,43 +34,8 @@
             </select>
           </div>
 
+          <CardProfil />
 
-          <div class="hidden sm:block">
-            <div class="border-b border-gray-700">
-              <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-                <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
-                <a href="dashboard.html"
-                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
-                  Tableau de bord </a>
-
-                <a href="dashboard_stat.html"
-                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
-                  Statistiques </a>
-
-                <a href="messagerie.html"
-                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
-                  Messagerie </a>
-
-                <a href="cours.html"
-                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                  aria-current="page"> Cours </a>
-
-                <a href="page404.html"
-                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                  aria-current="page"> page404</a>
-
-                <a href="profilpublic.html"
-                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
-                  Profil </a>
-
-                <a href="setting_profil.html"
-                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                  aria-current="page"> Paramètre </a>
-
-
-              </nav>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -249,86 +202,12 @@
                   </div>
 
                   <NewTrainingList />
-                  
+
                 </div>
 
                 <!-- Right column -->
-                <div class="grid grid-cols-1 gap-4">
-                  <!-- Announcements -->
-                  <section aria-labelledby="announcements-title">
-                    <div class="rounded-lg bg-white overflow-hidden shadow">
-                      <div class="p-6">
-                        <h2 class="text-base font-medium text-gray-900" id="announcements-title">
-                          Annonces</h2>
-                        <div class="flow-root mt-6">
-                          <ul role="list" class="-my-5 divide-y divide-gray-200">
-                            <li class="py-5">
-                              <div class="relative focus-within:ring-2 focus-within:ring-cyan-500">
-                                <h3 class="text-sm font-semibold text-gray-800">
-                                  <a href="#" class="hover:underline focus:outline-none">
-                                    <!-- Extend touch target to entire panel -->
-                                    <span class="absolute inset-0" aria-hidden="true"></span>
-                                    Office closed on July 2nd
-                                  </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-600 line-clamp-2">Cum qui
-                                  rem
-                                  deleniti. Suscipit in dolor veritatis sequi aut. Vero ut
-                                  earum
-                                  quis deleniti. Ut a sunt eum cum ut repudiandae
-                                  possimus. Nihil
-                                  ex tempora neque cum consectetur dolores.</p>
-                              </div>
-                            </li>
+                <DashboardAside />
 
-                            <li class="py-5">
-                              <div class="relative focus-within:ring-2 focus-within:ring-cyan-500">
-                                <h3 class="text-sm font-semibold text-gray-800">
-                                  <a href="#" class="hover:underline focus:outline-none">
-                                    <!-- Extend touch target to entire panel -->
-                                    <span class="absolute inset-0" aria-hidden="true"></span>
-                                    New password policy
-                                  </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-600 line-clamp-2">Alias
-                                  inventore
-                                  ut autem optio voluptas et repellendus. Facere totam
-                                  quaerat
-                                  quam quo laudantium cumque eaque excepturi vel.
-                                  Accusamus maxime
-                                  ipsam reprehenderit rerum id repellendus rerum. Culpa
-                                  cum vel
-                                  natus. Est sit autem mollitia.</p>
-                              </div>
-                            </li>
-
-                          </ul>
-                        </div>
-                        <div class="mt-6">
-                          <a href="#"
-                            class="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                            Voir plus </a>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
-                  <div class="wrapper px-2 w-full">
-                    <form action="" class="max-w-sm bg-gray-100 px-3 py-5 rounded shadow-lg my-10 m-auto">
-                      <label for="contact" class="font-bold">Contacter un coach:</label>
-                      <div class="flex flex-col gap-4">
-                        <div class=" items-center bg-white border border-gray-100 rounded w-full">
-                          <textarea type="text" id="contact" class="w-full focus:ring-carmine focus:border-carmine"
-                            autocomplete="off"></textarea>
-                        </div>
-                        <button type="submit" class="text-white bg-carmine hover:bg-gunmetal px-4 py-2 rounded">
-                          Envoyer
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-
-                </div>
               </div>
             </div>
           </main>
