@@ -1,4 +1,9 @@
 <template>
+  <HomeHeader />
+  <HomeAccompaniedSection />
+  <HomeRegisterSection />
+  <HomeNoPrerequisiteSection />
+  <HomeAllFormationSection />
 </template>
 
 <script setup lang="ts">
