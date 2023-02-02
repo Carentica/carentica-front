@@ -13,9 +13,10 @@
                     <div class="mt-8 sm:flex">
 
                         <div class="mt-3 sm:mt-0 sm:ml-3">
-                            <a href="nosformation.html"
+                            <nuxt-link to="/training"
                                 class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-carmine hover:bg-gunmetal">
-                                Consultez nos formations </a>
+                                Consultez nos formations
+                            </nuxt-link>
                         </div>
                     </div>
                 </div>

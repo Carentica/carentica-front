@@ -39,9 +39,9 @@
                             votre dernière séance d’apprentissage.</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="contact.html" class="text-base font-medium text-gunmetal">Contactez-nous<span
+                        <nuxt-link to="/contact" class="text-base font-medium text-gunmetal">Contactez-nous<span
                                 aria-hidden="true">
-                                &rarr;</span></a>
+                                &rarr;</span></nuxt-link>
                     </div>
                 </div>
 
@@ -63,9 +63,9 @@
                             communication de notre <strong>communauté crypto</strong>.</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="contact.html" class="text-base font-medium text-gunmetal">Contactez-nous<span
+                        <nuxt-link to="/contact" class="text-base font-medium text-gunmetal">Contactez-nous<span
                                 aria-hidden="true">
-                                &rarr;</span></a>
+                                &rarr;</span></nuxt-link>
                     </div>
                 </div>
 
@@ -86,9 +86,9 @@
                             balisé pour faciliter votre <strong>initiation à la crypto</strong>.</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="contact.html" class="text-base font-medium text-gunmetal">Contactez-nous<span
+                        <nuxt-link to="/contact" class="text-base font-medium text-gunmetal">Contactez-nous<span
                                 aria-hidden="true">
-                                &rarr;</span></a>
+                                &rarr;</span></nuxt-link>
                     </div>
                 </div>
             </div>
