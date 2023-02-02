@@ -53,12 +53,12 @@
 
             <button type="button"
               class="inline-flex items-center p-2 lg:p-2 border border-gunmetal md:text-sm lg:text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-200">
-              <span>Inscription</span>
+              <nuxt-link to="/signIn">Inscription</nuxt-link>
             </button>
 
             <button type="button"
               class="inline-flex items-center p-2 ml-3 lg:p-2 md:text-sm lg:text-base font-medium rounded-md text-white bg-carmine hover:bg-gunmetal">
-              <span>Connexion</span>
+              <nuxt-link to="/logIn">Connexion</nuxt-link>
             </button>
 
           </div>
@@ -89,12 +89,12 @@
 
           <button type="button"
             class="inline-flex items-center p-2 border border-gunmetal md:text-sm lg:text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-200">
-            <span>Inscription</span>
+            <nuxt-link to="/signIn">Inscription</nuxt-link>
           </button>
 
           <button type="button"
             class="inline-flex items-center p-2 ml-2 font-medium rounded-md text-white bg-carmine hover:bg-gunmetal">
-            <span>Connexion</span>
+            <nuxt-link to="/logIn">Connexion</nuxt-link>
           </button>
 
         </div>

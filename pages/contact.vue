@@ -1,4 +1,7 @@
 <template>
+  <!-- Ariane -->
+  <Breadcrumb />
+
   <div class="relative">
     <div class="hidden sm:block lg:absolute lg:inset-0">
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
