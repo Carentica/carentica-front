@@ -43,16 +43,16 @@
           </div>
         </div>
 
-        <div class="hidden flex items-center">
+        <div class="hidden md:flex items-center">
           <div class="flex-shrink-0">
 
             <button type="button"
-              class="inline-flex items-center md:p-1 lg:p-2 border border-gunmetal md:text-sm lg:text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-200">
+              class="inline-flex items-center p-2 lg:p-2 border border-gunmetal md:text-sm lg:text-base font-medium rounded-md text-carmine bg-white hover:bg-gray-200">
               <span>Inscription</span>
             </button>
 
             <button type="button"
-              class="inline-flex items-center md:p-1 lg:p-2  md:text-sm lg:text-base font-medium rounded-md text-white bg-carmine hover:bg-gunmetal">
+              class="inline-flex items-center p-2 ml-3 lg:p-2 md:text-sm lg:text-base font-medium rounded-md text-white bg-carmine hover:bg-gunmetal">
               <span>Connexion</span>
             </button>
 
