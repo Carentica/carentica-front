@@ -10,10 +10,7 @@
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
             <div class=" flex justify-between">
-              <a href="#" class="text-xl font-medium text-carmine"> Les bases
-                de la blockchain: </a>
-
-
+              <a href="#" class="text-xl font-medium text-carmine"> Les bases de la blockchain: </a>
             </div>
             <div class="text-sm flex justify-between">
               <div class="text-sm flex flex-col">
@@ -68,11 +65,6 @@
                     </p>
                   </div>
                 </div>
-
-
-
-
-
               </div>
             </div>
             <div class="flex flex-col md:flex-row gap-2">
