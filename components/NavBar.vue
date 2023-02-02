@@ -17,15 +17,15 @@
             </DisclosureButton>
           </div>
           <div class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+            <img class="block lg:hidden h-12 w-auto" src="../assets/images/carentica-logo-texte.svg"
               alt="Workflow" />
-            <img class="hidden lg:block h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg" alt="Workflow" />
+            <img class="hidden lg:block h-12 w-auto"
+              src="../assets/images/carentica-logo-texte.svg" alt="Workflow" />
           </div>
           <div class="hidden md:ml-6 md:flex md:space-x-8">
-            <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+            <!-- Current: "border-carmine text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
             <a href="#"
-              class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              class="border-carmine text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
               Dashboard
             </a>
             <a href="#"
@@ -64,7 +64,7 @@
 
     <DisclosurePanel class="md:hidden">
       <div class="pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+        <!-- Current: "bg-indigo-50 border-carmine text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <a href="#"
           class="bg-indigo-50 border-carmine text-carmine block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6">Dashboard</a>
         <a href="#"
