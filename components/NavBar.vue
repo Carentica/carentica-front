@@ -72,7 +72,8 @@
       <div class="pt-2 pb-3 space-y-1">
         <nuxt-link to="/dashboard"
           class="bg-indigo-50 border-carmine text-carmine block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6">Tableau de bord</nuxt-link>
-        <nuxt-link to="/about"
+        
+          <nuxt-link to="/about"
           class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6">À propos</nuxt-link>
        
         <nuxt-link to="/training"
