@@ -22,7 +22,7 @@
                 </nav>
             </div>
         </div>
-        <component :is="currentTabComponent" />
+
     </div>
 </template>
 
@@ -40,22 +40,6 @@ export default {
         return {
             tabs,
         }
-    },
-
-    data() {
-        return {
-            currentTab: 'tab1',
-            tabComponents: {
-                tab1: () => import('@/components/Tab1.vue'),
-                tab2: () => import('@/components/Tab2.vue'),
-                tab3: () => import('@/components/Tab3.vue'),
-            },
-        }
-    },
-    computed: {
-        currentTabComponent() {
-            return this.tabComponents[this.currentTab]
-        },
     },
 };
 </script>
