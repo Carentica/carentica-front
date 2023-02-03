@@ -17,7 +17,7 @@
             <DashboardSearch />
           </header>
 
-          <!-- Navigation -->
+          <!-- Mobile Navigation -->
           <div class="sm:hidden">
             <label for="tabs" class="sr-only">Select a tab</label>
             <select id="tabs" name="tabs" class="block w-full pl-3 pr-10 py-2 text-base sm:text-sm rounded-md">
@@ -31,6 +31,37 @@
 
               <option>Paramètre</option>
             </select>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden sm:block">
+            <div class="border-b border-gray-700">
+              <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+                <nuxt-link to="/dashboard"
+                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                  Tableau de bord </nuxt-link>
+
+                <nuxt-link to="/dashboard"
+                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                  Statistiques </nuxt-link>
+
+                <nuxt-link to="/dashboard"
+                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                  Messagerie </nuxt-link>
+
+                <nuxt-link to="/dashboard"
+                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
+                  aria-current="page"> Cours </nuxt-link>
+
+                <nuxt-link to="/dashboard"
+                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                  Profil </nuxt-link>
+
+                <nuxt-link to="/dashboard"
+                  class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
+                  aria-current="page"> Paramètre </nuxt-link>
+              </nav>
+            </div>
           </div>
 
           <!-- Profil card -->
@@ -57,7 +88,7 @@
           </main>
         </div>
       </main>
-    
+
     </div>
 
   </body>
