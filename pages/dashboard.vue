@@ -41,23 +41,23 @@
                   class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                   Tableau de bord </nuxt-link>
 
-                <nuxt-link to="/dashboard"
+                <nuxt-link to="/statistics"
                   class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                   Statistiques </nuxt-link>
 
-                <nuxt-link to="/dashboard"
+                <nuxt-link to="/messaging"
                   class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                   Messagerie </nuxt-link>
 
-                <nuxt-link to="/dashboard"
+                <nuxt-link to="/course"
                   class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
                   aria-current="page"> Cours </nuxt-link>
 
-                <nuxt-link to="/dashboard"
+                <nuxt-link to="/profile"
                   class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
                   Profil </nuxt-link>
 
-                <nuxt-link to="/dashboard"
+                <nuxt-link to="/setting"
                   class="border-transparent text-white  hover:border-carmine whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
                   aria-current="page"> Paramètre </nuxt-link>
               </nav>
