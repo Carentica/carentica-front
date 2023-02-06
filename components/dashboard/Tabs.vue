@@ -21,6 +21,8 @@
                 </nav>
             </div>
         </div>
+        
+        <DashboardMain />
 
     </div>
 </template>

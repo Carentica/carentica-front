@@ -15,7 +15,7 @@
             <!-- Search bar -->
             <DashboardSearch />
           </header>
-
+          
           <DashboardTabs />
 
         </div>
