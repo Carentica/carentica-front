@@ -17,6 +17,14 @@
                                 <p class="text-xl font-semibold text-gray-900">
                                     {{ training.title }}
                                 </p>
+
+                                <span 
+                                    class="px-2 py-1 text-xs font-medium rounded-full" 
+                                    v-bind:style="{ 'background-color': training.tag.color, 'color': training.tag.text }"
+                                > 
+                                Niveau {{ training.tag.level }}
+                                </span>
+                                
                                 <p class="mt-3 text-base text-gray-500 text-justify">
                                     {{ training.description }}
                                 </p>
@@ -63,6 +71,11 @@
 const trainings = [
     {
         title: 'Boost your conversion rate',
+        tag : {
+            level: 3,
+            color: '#fecaca',
+            text: '#991b1b',
+        },
         href: '#',
         category: { name: 'Article', href: '#' },
         description:
@@ -81,6 +94,11 @@ const trainings = [
     },
     {
         title: 'How to use search engine optimization to drive sales',
+        tag : {
+            level: 1,
+            color: '#99F6E4',
+            text: '#22716A',
+        },
         href: '#',
         category: { name: 'Video', href: '#' },
         description:
@@ -99,6 +117,11 @@ const trainings = [
     },
     {
         title: 'Improve your customer experience',
+        tag : {
+            level: 2,
+            color: '#BAE6FD',
+            text: '#3355B8',
+        },
         href: '#',
         category: { name: 'Case Study', href: '#' },
         description:
