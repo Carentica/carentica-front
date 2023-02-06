@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <!-- Tabs mobile -->
         <div class="sm:hidden">
             <label for="tabs" class="sr-only">Select a tab</label>
