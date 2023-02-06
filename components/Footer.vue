@@ -123,9 +123,19 @@
 
 
                 </div>
-                <p class="mt-8 text-base text-gray-300 md:mt-0 md:order-1">&copy; 2022 Carentica. Tous droits réservés.
+                <p class="mt-8 text-base text-gray-300 md:mt-0 md:order-1">&copy; 2022 - {{ currentYear }} Carentica. Tous droits réservés.
                 </p>
             </div>
         </div>
     </footer>
 </template>
+
+<script lang="ts">
+export default {
+  computed: {
+    currentYear() {
+      return new Date().getFullYear()
+    }
+  }
+}
+</script>
